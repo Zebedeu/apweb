@@ -10,5 +10,8 @@
     "require": {
          "php": ">=5.5.17",
          "kevinlebrun/slug.php": "1.*"
-    }
+    },
+    
+    "minimum-stability": "dev",
+    "prefer-stable": true
  }
