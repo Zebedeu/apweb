@@ -1,0 +1,14 @@
+{
+    "name": "wp/apweb",
+    "description": "Este é um pacote que com tem a FramworK APWEB",
+    "authors": [ 
+        {
+            "name": "Marcio Zebedeu",
+            "email": "marciozebedeu@gmail.com"
+        }
+    ],
+    "require": {
+         "php": ">=5.5.17",
+         "kevinlebrun/slug.php": "1.*"
+    }
+ }

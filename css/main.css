@@ -1,0 +1,86 @@
+
+/* ============= Contact Page =========== */
+.wpcf7{ margin:30px 0 0; padding:0;}
+.wpcf7 input[type="text"], .wpcf7 input[type="tel"], .wpcf7 input[type="email"]{ width:40%; border:1px solid #cccccc; box-shadow:inset 1px 1px 2px #ccc; height:35px; padding:0 15px; color:#797979; margin-bottom:0;}
+.wpcf7 textarea{width:60%; border:1px solid #cccccc; box-shadow:inset 1px 1px 2px #ccc; height:150px; color:#797979; margin-bottom:25px; font:12px arial; padding:10px; padding-right:0;}
+.wpcf7 input[type="submit"]{ width:auto; border:none; cursor:pointer; text-transform:uppercase; font:18px 'Oswald',san-serif; color:#ffffff; padding:10px 40px; border-radius:3px;}
+
+/* ============ colophon ============== */
+#colophon{ background-color:#000000; color:#ffffff;}
+#colophon .cols h2{text-transform:uppercase; margin-bottom:15px; font:18px 'Oswald',san-serif; color:#e7e7e7;}
+#colophon .cols .add-icon{ width:24px; height:24px; background-image:url(../images/location-icon.png); background-repeat:no-repeat; background-position: center center; float:left; border-radius:13px; margin-top:21px;}
+#colophon .cols .add-content{ float:right; margin:0; padding:0; width:82%; margin-top:14px;}
+#colophon .cols .phone-icon{ width:24px; height:24px; background-image:url(../images/call-icon.png); background-repeat:no-repeat; background-position: center center;float:left; border-radius:13px; margin-top:14px;}
+#colophon .cols .phone-content{ float:right; margin:0; padding:0; width:82%; margin-top:14px;}
+#colophon .cols .mail-icon{ width:24px; height:24px; background-image:url(../images/icon-mail.png); background-repeat:no-repeat; background-position: center center; float:left; border-radius:13px; margin-top:14px;}
+#colophon .cols .mail-content{ float:right; margin:0; padding:0; width:82%; margin-top:14px;}
+#colophon .cols a{ color:#ffffff;}
+#colophon .cols ul{ margin:0 0 0 1px; padding:0;}
+#colophon .cols ul li{font:16px 'Roboto Condensed',san-serif; padding-bottom:15px}
+
+.social span{ display:inline; vertical-align:-moz-middle-with-baseline;}
+.social a{ color:#eeeded; display:block; clear:both;}
+.social a:hover{ color:#7bb302; }
+.social .icon{width:100%; margin:0 1px 9px 0; padding:5px; width:15px; height:15px; border:1px solid #ffffff; background-repeat:no-repeat; background-position:center center; float:left; border-radius:13px;}
+/* ======== Social Icons =========== */
+.social .fb{background-image:url(../images/social/fb-icon.png);}
+.social .twitt{background-image:url(../images/social/twitt.png);}
+.social .gplus{background-image:url(../images/social/gplus.png);}
+.social .linkedin{background-image:url(../images/social/linkedin.png);}
+.social .pint{background-image:url(../images/social/pinterest.png);}
+.social .ytube{background-image:url(../images/social/ytube.png);}
+.social .vimeo{background-image:url(../images/social/vimeo.png);}
+.social .rss{background-image:url(../images/social/rss.png);}
+.social .insta{background-image:url(../images/social/instagram.png);}
+.social .tumblr{background-image:url(../images/social/tumblr.png);}
+.social .flickr{background-image:url(../images/social/flickr.png);}
+.social .yahoo{background-image:url(../images/social/yahoo.png);}
+.social .dribble{background-image:url(../images/social/dribble.png);}
+.social .kick{background-image:url(../images/social/kickstarter.png);}
+.social .stumble{background-image:url(../images/social/stumbleupon.png);}
+.social .aboutme{background-image:url(../images/social/me.png);}
+.social .eyeme{background-image:url(../images/social/eyeme.png);}
+.social .zerply{background-image:url(../images/social/zerply.png);}
+.social .soundcloud{background-image:url(../images/social/soundcloud.png);}
+.social .path{background-image:url(../images/social/path.png);}
+.social .klout{background-image:url(../images/social/klout.png);}
+.social .behance{background-image:url(../images/social/behance.png);}
+.social .envato{background-image:url(../images/social/envato.png);}
+.social .codepen{background-image:url(../images/social/codepen.png);}
+.social .vine{background-image:url(../images/social/vine.png);}
+.social .technorati{background-image:url(../images/social/technorati.png);}
+.social .git{background-image:url(../images/social/github.png);}
+.social .square{background-image:url(../images/social/foursquare.png);}
+.social .fivehundred{background-image:url(../images/social/fivehundred.png);}
+.social .speaker{background-image:url(../images/social/speakerdeck.png);}
+.social .wordpress{background-image:url(../images/social/wordpress.png);}
+.social .yelp{background-image:url(../images/social/yelp.png);}
+.social .xing{background-image:url(../images/social/xing.png);}
+.social .email{background-image:url(../images/social/email.png);}
+.social .blogger{background-image:url(../images/social/blogger.png);}
+.social .blip{background-image:url(../images/social/blip.png);}
+.social .wechat{background-image:url(../images/social/we-chat.png);}
+.social .badoo{background-image:url(../images/social/badoo.png);}
+.social .bebo{background-image:url(../images/social/bebo.png);}
+.social .netlog{background-image:url(../images/social/netlog.png);}
+.social .tagged{background-image:url(../images/social/tagged.png);}
+.social .line{background-image:url(../images/social/line.png);}
+.social .space{background-image:url(../images/social/myspace.png);}
+.social .hifive{background-image:url(../images/social/hifive.png);}
+.social .zorpia{background-image:url(../images/social/zorpia.png);}
+.social .vk{background-image:url(../images/social/vk.png);}
+.social .askfm{background-image:url(../images/social/askfm.png);}
+.social .meetme{background-image:url(../images/social/meetme.png);}
+.social .classmate{background-image:url(../images/social/classmates.png);}
+.social .ning{background-image:url(../images/social/ning.png);}
+.social .kiwibox{background-image:url(../images/social/kiwibox.png);}
+.social .rocket{background-image:url(../images/social/rocketlawyer.png);}
+.social .zillow{background-image:url(../images/social/zillow.png);}
+.social .whatsapp{background-image:url(../images/social/whatsapp.png);}
+.social .meetup{background-image:url(../images/social/meetup.png);}
+.social .medium{background-image:url(../images/social/medium.png);}
+/* ===================================== */
+
+#copyright{ background-color:#272727; padding:15px 0; color:#6d6d6d;}
+#copyright a{ color:#6d6d6d;}
+

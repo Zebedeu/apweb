@@ -1,0 +1,485 @@
+# Copyright (C) 2015 Marcio Zebedeu
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: _s 1.0.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tags/_s\n"
+"POT-Creation-Date: 2015-08-24 02:17+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-03-06 12:58+0100\n"
+"Language-Team: Marcio Zebedeu <marciozebdeu@gmail.com>\n"
+"X-Generator: Poedit 1.8.4\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: pt\n"
+
+# @ _s
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Ops!  A Página  não pode ser encontrada."
+
+# @ _s
+#: 404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links below or "
+"a search?"
+msgstr ""
+"Parece que n&atilde;o h&aacute; nada neste endere&ccedil;o. Se não houve erro de "
+"digitação, o conteúdo pode ter sido apagado ou movido. Talvez  um dos links abaixo ou "
+"uma busca lhe ajudem."
+
+# @ _s
+#: 404.php:27
+msgid "Most Used Categories"
+msgstr "Categorias mais Usadas"
+
+# @ _s
+#. translators: %1$s: smiley
+#: 404.php:44
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Tente olhar nos arquivos mensais. %1$s"
+
+# @ _s
+#: comments.php:29
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Um comentário em &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s pensamentos sobre &ldquo;%2$s&rdquo;"
+
+# @ _s
+#: comments.php:38 comments.php:59
+msgid "Comment navigation"
+msgstr "Navegue entre os comentários"
+
+# @ _s
+#: comments.php:41 comments.php:62
+msgid "Older Comments"
+msgstr "Comentários anteriores"
+
+# @ _s
+#: comments.php:42 comments.php:63
+msgid "Newer Comments"
+msgstr "Comentários recentes"
+
+# @ _s
+#: comments.php:75
+msgid "Comments are closed."
+msgstr "Desculpe, os comentários estão desativados para esse item."
+
+# @ _s
+#: footer.php:16
+msgid "http://wordpress.org/"
+msgstr "http://wordpress.org/"
+
+# @ _s
+#: footer.php:16
+#, php-format
+msgid "Proudly powered by %s"
+msgstr "Desenvolvido e Mantido por %s"
+
+# @ _s
+#: footer.php:16
+#, php-format
+msgid "All rights reserved"
+msgstr "Todos Direitos Reservados"
+
+# @ _s
+#: footer.php:18
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr "Tema : %1$s por %2$s."
+
+# @ _s
+#: footer.php:18
+#, php-format
+msgid "Contact apweb"
+msgstr "apweb Contactos"
+
+# @ _s
+#: footer.php:20
+#, php-format
+msgid "If you have any questions don't hesitate to contact us"
+msgstr "Se você tiver alguma duvida não hesite em contactar-nos"
+
+# @ _s
+#: footer.php:50
+#, php-format
+msgid "Follow Us"
+msgstr "Segue-nos"
+
+# @ _s
+#: functions.php:45 header.php:32
+msgid "Primary Menu"
+msgstr "Menu"
+
+# @ _s
+#: functions.php:100
+msgid "Sidebar"
+msgstr "Sidebar"
+
+# @ _s
+#: header.php:23
+msgid "Skip to content"
+msgstr "Ir para o conteúdo"
+
+# @ _s
+#: inc/extras.php:52
+#, php-format
+msgid "Page %s"
+msgstr "Página %s"
+
+# @ _s
+#: inc/template-tags.php:23
+msgid "Posts navigation"
+msgstr "Navegue entre os comentários"
+
+# @ _s
+#: inc/template-tags.php:27
+msgid "Older posts"
+msgstr "Comentários anteriores"
+
+# @ _s
+#: inc/template-tags.php:31
+msgid "Newer posts"
+msgstr "Comentários recentes"
+
+# @ _s
+#: inc/template-tags.php:56
+msgid "Post navigation"
+msgstr "Navegue entre os comentários"
+
+# @ _s
+#: inc/template-tags.php:86
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "Postado em %s"
+
+# @ _s
+#: inc/template-tags.php:91
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr "por %s"
+
+# @ _s
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:108 inc/template-tags.php:114
+msgid ", "
+msgstr ","
+
+# @ _s
+#: inc/template-tags.php:110
+#, php-format
+msgid "Posted in %1$s"
+msgstr "Postado em %1$s"
+
+# @ _s
+#: inc/template-tags.php:116
+#, php-format
+msgid "Tagged %1$s"
+msgstr "Tages %1$s"
+
+# @ _s
+#: inc/template-tags.php:122
+msgid "Leave a comment"
+msgstr " Deixa um comentário "
+
+# @ _s
+#: inc/template-tags.php:122
+msgid "1 Comment"
+msgstr "1 Comentario "
+
+# @ _s
+#: inc/template-tags.php:122
+msgid "% Comments"
+msgstr "% Comentarios "
+
+# @ _s
+#: inc/template-tags.php:126 template-parts/content-page.php:26
+msgid "Edit"
+msgstr "Editar"
+
+# @ _s
+#: inc/template-tags.php:143
+#, php-format
+msgid "Category: %s"
+msgstr "Categorias: %s"
+
+# @ _s
+#: inc/template-tags.php:145
+#, php-format
+msgid "Tag: %s"
+msgstr "Tag: %s"
+
+# @ _s
+#: inc/template-tags.php:147
+#, php-format
+msgid "Author: %s"
+msgstr "Autor: %s"
+
+# @ _s
+#: inc/template-tags.php:149
+#, php-format
+msgid "Year: %s"
+msgstr "Ano: %s"
+
+# @ _s
+#: inc/template-tags.php:149
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+# @ _s
+#: inc/template-tags.php:151
+#, php-format
+msgid "Month: %s"
+msgstr "Mês: %s"
+
+# @ _s
+#: inc/template-tags.php:151
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+# @ _s
+#: inc/template-tags.php:153
+#, php-format
+msgid "Day: %s"
+msgstr "Dias: %s"
+
+# @ _s
+#: inc/template-tags.php:153
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr "F j, Y"
+
+# @ _s
+#: inc/template-tags.php:156
+msgctxt "post format archive title"
+msgid "Asides"
+msgstr "Asides"
+
+# @ _s
+#: inc/template-tags.php:158
+msgctxt "post format archive title"
+msgid "Galleries"
+msgstr "Gallerias"
+
+# @ _s
+#: inc/template-tags.php:160
+msgctxt "post format archive title"
+msgid "Images"
+msgstr "Imagens"
+
+# @ _s
+#: inc/template-tags.php:162
+msgctxt "post format archive title"
+msgid "Videos"
+msgstr "Vídeos"
+
+# @ _s
+#: inc/template-tags.php:164
+msgctxt "post format archive title"
+msgid "Quotes"
+msgstr "Citações"
+
+# @ _s
+#: inc/template-tags.php:166
+msgctxt "post format archive title"
+msgid "Links"
+msgstr "Links"
+
+# @ _s
+#: inc/template-tags.php:168
+msgctxt "post format archive title"
+msgid "Statuses"
+msgstr "Status"
+
+# @ _s
+#: inc/template-tags.php:170
+msgctxt "post format archive title"
+msgid "Audio"
+msgstr "Audio"
+
+# @ _s
+#: inc/template-tags.php:172
+msgctxt "post format archive title"
+msgid "Chats"
+msgstr "Chats"
+
+# @ _s
+#: inc/template-tags.php:175
+#, php-format
+msgid "Archives: %s"
+msgstr "Arquivos: %s"
+
+# @ _s
+#. translators: 1: Taxonomy singular name, 2: Current taxonomy term
+#: inc/template-tags.php:179
+#, php-format
+msgid "%1$s: %2$s"
+msgstr "%1$s: %2$s"
+
+# @ _s
+#: inc/template-tags.php:181
+msgid "Archives"
+msgstr "Arquivos"
+
+# @ _s
+#: search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Procurar Resultado por: %s"
+
+# @ _s
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "Nada encontrado"
+
+# @ _s
+#: template-parts/content-none.php:20
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Pronto para publicar o seu primeiro? <a href=\"%1$s\">Comece aqui</a>."
+
+# @ _s
+#: template-parts/content-none.php:24
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some different "
+"keywords."
+msgstr ""
+"Desculpe, mas nada combinando seus termos de pesquisa. Por favor, tente novamente com "
+"algumas palavras-chave diferentes."
+
+# @ _s
+#: template-parts/content-none.php:29
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can "
+"help."
+msgstr "Se não encontra o que procura, talvez a barra de busca pode ajudar…"
+
+# @ _s
+#: template-parts/content-page.php:19 template-parts/content-single.php:23
+#: template-parts/content.php:32
+msgid "Pages:"
+msgstr "Páginas:"
+
+# @ _s
+#. translators: %s: Name of current post
+#: template-parts/content.php:25
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Continue a Ler %s <span class=\"meta-nav\">&rarr;</span>"
+
+# @ _s
+#: inc/customizer.php:54
+msgid "Logo Settings available in %s."
+msgstr "Configuração do Logo disponível em %s."
+
+# @ _s
+#: inc/customizer.php:77
+msgid "Color Scheme"
+msgstr "Esquema de Cor"
+
+# @ _s
+#: inc/customizer.php:78
+msgid "More color options in %s."
+msgstr "Mais opções de cor em %s."
+
+# @ _s
+#: inc/customizer.php:92
+msgid "Background for Casulo"
+msgstr "Background para o Casulo"
+
+# @ _s
+#: inc/customizer.php:105
+msgid "Background for Header"
+msgstr "Background para o Cabeçalho"
+
+# @ _s
+#: inc/customizer.php:118
+msgid "Background for Footer"
+msgstr "Background para o Rodapé"
+
+# @ _s
+#: inc/customizer.php:131
+msgid "Background for Copyright"
+msgstr "Background para o Copyright"
+
+#: inc/customizer.php:140
+msgid "Footer Text"
+msgstr "Texto do Rodapé"
+
+#: inc/customizer.php:142
+msgid "Add footer copyright text"
+msgstr "Adicionar Texto dos Direitos Autorais ao Rodapé"
+
+#: inc/customizer.php:153
+msgid "To remove credit &amp; copyright text upgrade to PRO version"
+msgstr ""
+"Para remover os Créditos e o texto dos Direitos Autorais atualiza para a versão PRO"
+
+#: inc/customizer.php:159
+msgid ""
+"<a href=\"#\">Home</a> | <a href=\"#\">Contact Us</a> | <a href=\"#\">Sitemap</a>"
+msgstr ""
+"<a href=\"#\">Principal</a> | <a href=\"#\">Contacta-nos</a> | <a href=\"#\">Sitemap</"
+"a>"
+
+#: inc/customizer.php:176
+msgid "Slider Settings"
+msgstr "Configurações do Slide"
+
+#: inc/customizer.php:177
+msgid "Featured Image Size Should be ( 1400x446 ) More slider settings available in %s."
+msgstr ""
+
+#: inc/customizer.php:192
+msgid "Slide Image 1 (1400x446)"
+msgstr "Imagem do Slide 1 (1400x446)"
+
+#: inc/customizer.php:200
+msgid "The Next Level in WordPress Theme"
+msgstr ""
+
+#: inc/customizer.php:205
+msgid "Slider title 1"
+msgstr "Titulo do Slide 1"
+
+#: inc/customizer.php:211
+msgid "Take your Website to the next level."
+msgstr ""
+
+#: inc/customizer.php:220
+msgid "Slider description 1"
+msgstr "Descrição do Slide 1"
+
+#: inc/customizer.php:233
+msgid "Slide link 1"
+msgstr "Link do Slide 1"
+
+#: inc/customizer.php:248
+msgid "Slide image 2"
+msgstr "Imagem do Slide 2"
+
+#: inc/customizer.php:256
+msgid "apweb WordPress Theme"
+msgstr "Tema WordPress Apweb"
+
+#: inc/customizer.php:261
+msgid "Slide title 2"
+msgstr "Titulo do Slide 2"
+
+#: inc/customizer.php:267
+msgid "Responsive & Retina Ready with Clean and Modern Design"
+msgstr ""
+
+#: inc/customizer.php:276
+msgid "Slide description 2"
+msgstr "Descrição do Slide 2"
