@@ -1,6 +1,6 @@
 {
     "name": "Zebedeu/fw-apweb",
-    "description": "Este é um pacote que com tem a FramworK APWEB",
+    "description": "Este é um pacote que comtem o  tema FramworK APWEB",
     "authors": [ 
         {
             "name": "Marcio Zebedeu",
@@ -8,8 +8,7 @@
         }
     ],
     "require": {
-         "php": ">=5.5.17",
-         "kevinlebrun/slug.php": "1.*"
+         "php": ">=5.5.17"
     },
     
     "minimum-stability": "dev",
