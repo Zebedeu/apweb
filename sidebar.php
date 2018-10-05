@@ -4,8 +4,8 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package APWEB-FRAMWORK
- * @since Apweb 1.0.2
+ * @package apweb
+ * @since apweb 1.0.0
  */
 if (!is_active_sidebar('sidebar-1')) {
     return;
@@ -14,7 +14,7 @@ if (!is_active_sidebar('sidebar-1')) {
 ?>
 
 <div id="secondary" class="widget-area" role="complementary">
-		        <?php apweb_romdom_sidebar(); ?>   
+		        <?php apweb_romdom_sidebar(); ?>
                                           
     <?php dynamic_sidebar('sidebar-1'); ?>
 </div><!-- #secondary -->

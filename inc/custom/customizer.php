@@ -70,7 +70,7 @@ function apweb_customize_register( $wp_customize )
         array(
             'title' => __('Logo (PRO Version)', 'apweb'),
             'priority' => 1,
-            'description' => sprintf( __( 'Logo Settings available in %s.', 'apweb' ), sprintf( '<a href="%1$s" target="_blank">%2$s</a>', esc_url( '"'.SKT_PRO_THEME_URL.'"' ), __( 'PRO Version', 'apweb' ))),	
+            'description' => sprintf( __( 'Logo Settings available in %s.', 'apweb' ), sprintf( '<a href="%1$s" target="_blank">%2$s</a>', esc_url( '"'.SKT_PRO_THEME_URL.'"' ), __( 'PRO Version', 'apweb' ))),
         )
     );  
     $wp_customize->add_setting('apweb_options[logo-info]', array(
@@ -96,7 +96,7 @@ function apweb_customize_register( $wp_customize )
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control($wp_customize,'color_scheme',array(
 			'label' => __('Color Scheme','apweb'),
-			 'description' => sprintf( __( 'More color options in %s.', 'apweb' ), sprintf( '<a href="%1$s" target="_blank">%2$s</a>', esc_url( '"'.SKT_PRO_THEME_URL.'"' ), __( 'PRO Version', 'apweb' ))),			
+			 'description' => sprintf( __( 'More color options in %s.', 'apweb' ), sprintf( '<a href="%1$s" target="_blank">%2$s</a>', esc_url( '"'.SKT_PRO_THEME_URL.'"' ), __( 'PRO Version', 'apweb' ))),
 			'section' => 'colors',
 			'settings' => 'color_scheme'
 		))
@@ -208,7 +208,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	
 	$wp_customize->add_setting('footer_right',array(
 			'default'	=> __('<a href="#">Home</a> | <a href="#">Contact Us</a> | <a href="#">Sitemap</a>','apweb'),
-			'sanitize_callback'	=> 'wp_htmledit_pre'
+			'sanitize_callback'	=> 'format_for_editor'
 	));
 	
 	$wp_customize->add_control(
@@ -231,7 +231,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 
 	$wp_customize->add_section('slider_section',array(
 		'title'	=> __('Slider Settings','apweb'),
-		 'description' => sprintf( __( 'Featured Image Size Should be ( 1400x446 ) More slider settings available in %s.', 'apweb' ), sprintf( '<a href="%1$s" target="_blank">%2$s</a>', esc_url( '"'.SKT_PRO_THEME_URL.'"' ), __( 'PRO Version', 'apweb' ))),	
+		 'description' => sprintf( __( 'Featured Image Size Should be ( 1400x446 ) More slider settings available in %s.', 'apweb' ), sprintf( '<a href="%1$s" target="_blank">%2$s</a>', esc_url( '"'.SKT_PRO_THEME_URL.'"' ), __( 'PRO Version', 'apweb' ))),
 		'priority'		=> null
 	));
 	
@@ -266,7 +266,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	
 	$wp_customize->add_setting('slide_desc1',array(
 		'default'	=> __('Take your Website to the next level.','apweb'),
-		'sanitize_callback'	=> 'wp_htmledit_pre'	
+		'sanitize_callback'	=> 'format_for_editor'	
 	));
 	
 	$wp_customize->add_control(
@@ -322,7 +322,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	
 	$wp_customize->add_setting('slide_desc2',array(
 			'default'	=> __('Responsive & Retina Ready with Clean and Modern Design','apweb'),
-			'sanitize_callback'	=> 'wp_htmledit_pre'
+			'sanitize_callback'	=> 'format_for_editor'
 	));
 	
 	$wp_customize->add_control(
@@ -378,7 +378,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	
 	$wp_customize->add_setting('slide_desc3',array(
 			'default'	=> __('Re-Usable features with amazing user experience','apweb'),
-			'sanitize_callback'	=> 'wp_htmledit_pre'
+			'sanitize_callback'	=> 'format_for_editor'
 	));
 	
 	$wp_customize->add_control(
@@ -406,7 +406,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	
 	$wp_customize->add_setting('slide_image4',array(
 			'default'	=> '',
-			'sanitize_callback'	=> 'wp_htmledit_pre'
+			'sanitize_callback'	=> 'format_for_editor'
 	));
 	
 	$wp_customize->add_control(
@@ -434,7 +434,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	
 	$wp_customize->add_setting('slide_desc4',array(
 			'default'	=> '',
-			'sanitize_callback'	=> 'wp_htmledit_pre'
+			'sanitize_callback'	=> 'format_for_editor'
 	));
 	
 	$wp_customize->add_control(
@@ -464,7 +464,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	/////////
 	$wp_customize->add_setting('slide_image5',array(
 			'default'	=> '',
-			'sanitize_callback'	=> 'wp_htmledit_pre'
+			'sanitize_callback'	=> 'format_for_editor'
 	));
 	
 	$wp_customize->add_control(
@@ -492,7 +492,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	
 	$wp_customize->add_setting('slide_desc5',array(
 			'default'	=> '',
-			'sanitize_callback'	=> 'wp_htmledit_pre'
+			'sanitize_callback'	=> 'format_for_editor'
 	));
 	
 	$wp_customize->add_control(
@@ -594,7 +594,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 
 	$wp_customize->add_section('social_sec',array(
 			'title'	=> __('Social Settings','apweb'),
-			'description' => sprintf( __( 'More social icon available in %s.', 'apweb' ), sprintf( '<a href="%1$s" target="_blank">%2$s</a>', esc_url( '"'.SKT_PRO_THEME_URL.'"' ), __( 'PRO Version', 'apweb' ))),	
+			'description' => sprintf( __( 'More social icon available in %s.', 'apweb' ), sprintf( '<a href="%1$s" target="_blank">%2$s</a>', esc_url( '"'.SKT_PRO_THEME_URL.'"' ), __( 'PRO Version', 'apweb' ))),
 			'priority'		=> null
 	));
 	
@@ -669,7 +669,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	
 	$wp_customize->add_setting('contact_desc',array(
 			'default'	=> __('Sed suscipit mauris nec mauris vulputate, a posuere libero congue. Nam laoreet elit eu erat pulvinar, et efficitur nibh euismod.Nam metus lorem, hendrerit quis ante eget, lobortis elementum neque. Aliquam in ullamcorper quam. Integer euismod ligula in mauris vehic.','apweb'),
-			'sanitize_callback'	=> 'wp_htmledit_pre'
+			'sanitize_callback'	=> 'format_for_editor'
 	));
 	
 	$wp_customize->add_control(
@@ -686,7 +686,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	
 	$wp_customize->add_setting('contact_add',array(
 			'default'	=> __('Rua Diolinda Rodrigues, Bairro Comercial, Huila, Lubango','apweb'),
-			'sanitize_callback'	=> 'wp_htmledit_pre'
+			'sanitize_callback'	=> 'format_for_editor'
 	));
 	
 	$wp_customize->add_control(
@@ -763,7 +763,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
         array(
             'title' => __('Fonts Settings (PRO Version)', 'apweb'),
             'priority' => null,
-            'description' => sprintf( __( 'Font Settings available in   %s.', 'apweb' ), sprintf( '<a href="%1$s" target="_blank">%2$s</a>', esc_url( '"'.SKT_PRO_THEME_URL.'"' ), __( 'PRO Version', 'apweb' ))),		
+            'description' => sprintf( __( 'Font Settings available in   %s.', 'apweb' ), sprintf( '<a href="%1$s" target="_blank">%2$s</a>', esc_url( '"'.SKT_PRO_THEME_URL.'"' ), __( 'PRO Version', 'apweb' ))),
         )
     );  
     $wp_customize->add_setting('apweb_options[font-info]', array(
@@ -792,7 +792,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
         array(
             'title' => __('Documentation &amp; Support', 'apweb'),
             'priority' => null,
-			 'description' => sprintf( __( 'For documentation and support check this link %s.', 'apweb' ), sprintf( '<a href="%1$s" target="_blank">%2$s</a>', esc_url( '"'.SKT_THEME_DOC.'"' ), __( 'apweb Documentation', 'apweb' ))),          
+			 'description' => sprintf( __( 'For documentation and support check this link %s.', 'apweb' ), sprintf( '<a href="%1$s" target="_blank">%2$s</a>', esc_url( '"'.SKT_THEME_DOC.'"' ), __( 'apweb Documentation', 'apweb' ))),
         )
     );  
     $wp_customize->add_setting('apweb_options[info]', array(
@@ -807,7 +807,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
         'priority' => 10
         ) )
     );
-	require_once 'class-customizer.php';
+    get_template_part( 'class-customizer.php');
 }
 add_action( 'customize_register', 'apweb_customize_register' );
 
@@ -871,7 +871,7 @@ function apweb_custom_css(){
 					}
 			</style>
 	<?php }
-add_action('wp_head','apweb_custom_css');	
+add_action('wp_head','apweb_custom_css');
 
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.

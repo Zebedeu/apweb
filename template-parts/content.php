@@ -4,8 +4,8 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package APWEB-FRAMWORK
- * @since Apweb 1.0.2
+ * @package apweb
+ * @since apweb 1.0.0
  */
 ?>
 
@@ -17,7 +17,7 @@
             
         </header><!-- .entry-header -->
 
-        <div class="entry-content" <?php echo $p_family; ?>>
+        <div class="entry-content">
                   <div class="apweb_the_excerpt">
                       <?php apweb_the_excerpt(0, 300); ?>
                   </div>
@@ -38,7 +38,7 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/images/img_404.png" />
                 <?php endif; ?>
                  <?php else : ?>
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/img_404.png" />
+                    <img style="padding-left: 13%;" src="<?php echo get_template_directory_uri(); ?>/images/img_404.png" />
             <?php endif; ?>
 
 

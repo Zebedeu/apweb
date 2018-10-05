@@ -1,7 +1,7 @@
 # apweb
 Framwork Project
 
-# Apweb Framework #
+# apweb Framework #
 
 
 * [GitHub](https://github.com/ArtPhotografie/apweb)
@@ -9,7 +9,7 @@ Framwork Project
 
 ## Descrição do Projeto ##
 
-Bem vindos ao Apweb Framework, um tema base desenvolvido pela [ArtFotografie ](https://www.facebook.com/ARTPHOTOGRAFIE1), para auxiliar no desenvolvimento ágil de temas para WordPress.
+Bem vindos ao apweb Framework, um tema base desenvolvido pela [ArtFotografie ](https://www.facebook.com/ARTPHOTOGRAFIE1), para auxiliar no desenvolvimento ágil de temas para WordPress.
 
 ## Instalação ##
 
@@ -19,7 +19,7 @@ Envie a pasta "apweb" para a pasta de temas padrão do WordPress `wp-content/the
 
 ## Suporte a plugins ##
 
- Apweb Framework suporta nativamente os plugins:
+ apweb Framework suporta nativamente os plugins:
 
 * [WooCommerce](http://wordpress.org/extend/plugins/woocommerce/)
 * [JetPack](http://wordpress.org/extend/plugins/jetpack/) Infinite Scroll
@@ -34,7 +34,7 @@ Envie a pasta "apweb" para a pasta de temas padrão do WordPress `wp-content/the
 
 ## Bugs e Sugestões ##
 
-O Apweb Framework é um projeto **Open Source**. Qualquer um pode (e deveria) ajudar a melhorá-lo.
+O apweb Framework é um projeto **Open Source**. Qualquer um pode (e deveria) ajudar a melhorá-lo.
 
 Reporte bugs ou faça sugestões utilizando o [Issues/Fórum do Projeto](https://github.com/ArtPhotografie/apweb/issues)
 

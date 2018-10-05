@@ -7,8 +7,8 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package APWEB-FRAMWORK
- * @since Apweb 1.0.2
+ * @package apweb
+ * @since apweb 1.0.0
  */
 /*
  * If the current post is protected by a password and

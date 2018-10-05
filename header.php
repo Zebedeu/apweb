@@ -6,8 +6,8 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package APWEB-FRAMWORK
- * @since Apweb 1.0.2
+ * @package apweb
+ * @since apweb 1.0.0
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -37,8 +37,8 @@
 
 
                     <?php
-
-                    /** if (get_theme_mod('contact_add')) { ?>
+                        /**
+                     if (get_theme_mod('contact_add')) { ?>
                         <div class="add-icon"></div><!-- add-icon --><div class="add-content"><?php echo get_theme_mod('contact_add', __('Dummy Donec Rutrum, 1234 N Duis lacinia vel.', 'apweb')); ?></div><!-- add-content --><div class="clear"></div>
                     <?php } ?>
                     <?php if (get_theme_mod('contact_no')) { ?>
@@ -46,9 +46,8 @@
                     <?php } ?>
                     <?php if (get_theme_mod('contact_mail')) { ?>
                         <div class="mail-icon"></div><!-- mail-icon --><div class="mail-content"><a href="mailto:<?php echo get_theme_mod('contact_mail', 'contact@company.com'); ?>"><?php echo get_theme_mod('contact_mail', 'contact@company.com'); ?></a></div><!-- mail-content --><div class="clear"></div>
-                    <?php } ?>
-                    */
-                    ?>
+                    <?php } **/?>
+                
                     <div class="site-branding">
                        
     <h1 id="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
@@ -56,7 +55,7 @@
 
                     </div><!-- .site-branding -->
                     <nav id="site-navigation" class="main-navigation" role="navigation">
-                        <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><div class="glyphicon glyphicon-th-list"></div></button>
+                        <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><p class="glyphicon glyphicon-th-list" ></p></button>
                         <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
                     </nav><!-- #site-navigation -->
                    

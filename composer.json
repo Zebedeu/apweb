@@ -1,6 +1,6 @@
 {
-    "name": "zebedeu/fw-apweb",
-    "description": "Este é um pacote que comtem o  tema FramworK APWEB",
+    "name": "zebedeu/apweb",
+    "description": "Este é um pacote que comtem o  tema FramworK apweb",
     "authors": [ 
         {
             "name": "Marcio Zebedeu",

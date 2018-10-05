@@ -6,8 +6,8 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package APWEB-FRAMWORK
- * @since Apweb 1.0.2
+ * @package apweb
+ * @since apweb 1.0.0
  */
 ?>
 

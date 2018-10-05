@@ -6,8 +6,8 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package APWEB-FRAMWORK
- * @since Apweb 1.0.2
+ * @package apweb
+ * @since apweb 1.0.0
  */
 ?>
 
@@ -75,17 +75,17 @@
 
     <div class="site-info">
     <p><a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a> &copy; <?php echo date( 'Y' ); ?> - <?php printf( esc_html__( 'All rights reserved', 'apweb' ), 'apweb'); ?><br/>
-        <a href="<?php echo esc_url(__('https://artphoweb.com/', 'apweb')); ?>"><?php printf(esc_html__('Proudly powered by %s', 'apweb'), 'ARTPHOTOGRAFIE'); ?></a>
-        <?php printf(esc_html__('Theme: %1$s by %2$s.', 'apweb'), 'apweb', '<a href="https://artphoweb.com/" rel="designer">Marcio Zebedeu</a>'); ?><br/>
-        <?php echo get_theme_mod('footer_right',  __('<a href="https://artphoweb.com/">Home</a> | <a href="http://artphoweb.com/contactos/">Contact Us</a> | <a href="#">Sitemap</a>','apweb')); ?></p>
+        <a href="<?php echo esc_url(__('https://github.com/Zebedeu/fw-apweb', 'apweb')); ?>"><?php printf(esc_html__('Proudly powered by %s', 'apweb'), 'ARTPHOTOGRAFIE'); ?></a>
+        <?php printf(esc_html__('Theme: %1$s by %2$s.', 'apweb'), 'apweb', '<a href="https://github.com/Zebedeu/fw-apweb" rel="designer">Marcio Zebedeu</a>'); ?><br/>
+        <?php echo get_theme_mod('footer_right',  __('<a href="https://github.com/Zebedeu/fw-apweb">Home</a> | <a href="http://artphoweb.com/contactos/">Contact Us</a> | <a href="#">Sitemap</a>','apweb')); ?></p>
 
         
     </div><!-- .site-info -->
 </footer><!-- #colophon -->
 </div><!-- #page -->
 
-
-<?php wp_footer(); ?>        
+<?php wp_footer();
+?>
 </div><!-- #base -->
 
 </body>

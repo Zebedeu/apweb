@@ -5,8 +5,8 @@
  * This page is implemented using the Settings API
  * http://codex.wordpress.org/Settings_API
  * 
- * @package APWEB-FRAMWORK 
- * @since Apweb 1.0.2
+ * @package apweb
+ * @since apweb 1.0.0
  */
 if (!function_exists('apweb_setup')) :
     /**
@@ -20,9 +20,8 @@ if (!function_exists('apweb_setup')) :
     
     function apweb_setup() {
 
-        /*         * *** loard APWEB-FRAMWORK theme Options */
+        /*         * *** loard apweb theme Options */
 
-        add_filter('show_admin_bar', '__return_false');
 
 
         // Remover link RSD ,,  O RSD (Real Simples Discovery) e usado pelo mecanismo de clientes XML-RPC. Se voce nao utiliza servicos como Flickr ou Quora com seu WordPress, considere remove-lo com a linha de codigo abaixo:
@@ -77,7 +76,7 @@ if (!function_exists('apweb_setup')) :
         /*
          * Make theme available for translation.
          * Translations can be filed in the /languages/ directory.
-         * If you're building a theme based on APWEB-FRAMWORK, use a find and replace
+         * If you're building a theme based on apweb, use a find and replace
          * to change 'apweb' to the name of your theme in all the template files.
          */
         load_theme_textdomain('apweb', get_template_directory() . '/languages');
@@ -217,13 +216,16 @@ add_action('widgets_init', 'apweb_widgets_init');
 */
 
 function get_category_id($cat_name){
-    $term = get_term_by('name', $cat_name, 'category');
+    $term = get_term_by('blog', $cat_name, 'category');
+
+    if($term == false) {
+        return false;
+    }
     return $term->term_id;
 }
 
-
 /**
- * Apweb custom stylesheet URI.
+ * apweb custom stylesheet URI.
  *
  * @since  1.0.2
  *
@@ -346,6 +348,8 @@ if ( is_woocommerce_activated() ) {
     require get_template_directory() . '/inc/woocommerce/functions.php';
     require get_template_directory() . '/inc/woocommerce/template-tags.php';
 }
+
+add_editor_style();
 
 
 

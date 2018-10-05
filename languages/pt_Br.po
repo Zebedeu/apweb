@@ -470,7 +470,7 @@ msgstr "Imagem do Slide 2"
 
 #: inc/customizer.php:256
 msgid "apweb WordPress Theme"
-msgstr "Tema WordPress Apweb"
+msgstr "Tema WordPress apweb"
 
 #: inc/customizer.php:261
 msgid "Slide title 2"

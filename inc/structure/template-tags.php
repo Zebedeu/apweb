@@ -5,8 +5,8 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package APWEB-FRAMWORK
- * @since Apweb 1.0.2
+ * @package apweb
+ * @since apweb 1.0.0
  */
 
 

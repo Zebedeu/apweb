@@ -5,8 +5,8 @@
  * This page is implemented using the Settings API
  * http://codex.wordpress.org/Settings_API
  *
- * @package APWEB-FRAMWORK
- * @since Apweb 1.0.2
+ * @package apweb
+ * @since apweb 1.0.0
  *
 *
      * Sets up theme defaults and registers support for various WordPress features.
@@ -17,7 +17,6 @@
      */
 
     add_theme_support("title-tag");
-    add_theme_support("custom-header", $args);
     /*
      * This is an example of how to add custom scripts to the options panel.
      * This one shows/hides the an option when a checkbox is clicked.
@@ -29,7 +28,6 @@
 load_template( trailingslashit( get_template_directory() ) . '/inc/class/function.php');
 load_template( trailingslashit( get_template_directory() ) . '/inc/class/class-function.php');
 load_template( trailingslashit( get_template_directory() ) . '/inc/class/class-breadcrumb.php');
-load_template( trailingslashit( get_template_directory() ) . '/inc/class/Testando.php');
 
 /**
  * Implement the Custom Header feature.
@@ -147,7 +145,7 @@ function apweb_scripts_() {
     wp_enqueue_style( 'apweb-basic-style', get_stylesheet_uri() );
     wp_enqueue_style( 'apweb-editor-style', get_template_directory_uri()."/editor-style.css" );
     wp_enqueue_style( 'apweb-nivoslider-style', get_template_directory_uri()."/css/nivo-slider.css" );
-    wp_enqueue_style( 'apweb-main-style', get_template_directory_uri()."/css/main.css" );     
+    wp_enqueue_style( 'apweb-main-style', get_template_directory_uri()."/css/main.css" );
     wp_enqueue_style( 'apweb-base-style', get_template_directory_uri()."/css/style_base.css" );
     wp_enqueue_script( 'apweb-nivo-script', get_template_directory_uri() . '/js/jquery.nivo.slider.js', array('jquery') );
     wp_enqueue_script( 'apweb-custom_js', get_template_directory_uri() . '/js/custom.js' );
@@ -185,6 +183,7 @@ define('SKT_PRO_THEME_URL','http://artphotografie.com/shop/apweb-corporate-wordp
 define('SKT_THEME_FEATURED_SET_VIDEO_URL','https://www.youtube.com/...');
 
 
+
 /**
  * Customizer additions.
  */
@@ -195,5 +194,6 @@ define('SKT_THEME_FEATURED_SET_VIDEO_URL','https://www.youtube.com/...');
 /**
  * Load Jetpack compatibility file.
  */
-//require get_template_directory() . '/inc/jetpack/jetpack.php';
+require get_template_directory() . '/inc/jetpack/jetpack.php';
+
 

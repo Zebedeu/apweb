@@ -9,8 +9,8 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package APWEB-FRAMWORK
- * @since Apweb 1.0.2
+ * @package apweb
+ * @since apweb 1.0.0
  */
 get_header();
 ?>
@@ -18,34 +18,35 @@ get_header();
 <div id="primary" class="content-area">
 
     <main id="main" class="site-main" role="main">
-        <?php if (have_posts()) : ?>
+        <?php if (have_posts()) : 
 
-            <?php if (is_home() && !is_front_page()) : ?>
+            if (is_home() && !is_front_page()) : ?>
                 <header>
                     <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
                 </header>
-            <?php endif; ?>
+            <?php endif; 
 
 
-            <?php /* Start the Loop */ ?>
-            <?php while (have_posts()) : the_post(); ?>
-                <?php do_action('format_init'); ?>
+                 /* Start the Loop */ 
+             while (have_posts()) : the_post();
+                
+                 do_action('format_init');
 
-            <?php endwhile; ?>
-              <?php apweb_paging_nav(); ?>
+             endwhile; 
+              apweb_paging_nav();
 
 
 
-        <?php else : ?>
+        else : 
 
-            <?php do_action('none_init'); ?>
+             do_action('none_init');
 
-        <?php endif; ?>
+         endif; ?>
 
 
 
     </main><!-- #main -->
 </div><!-- #primary -->
 
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+<?php get_sidebar();
+  get_footer(); ?>

@@ -73,17 +73,17 @@ function apweb_get_breadcrumb(){
     $show_breadcrumb = get_post_meta( $post->ID, '_apweb_show_breadcrumb', true );
     }
     if($show_breadcrumb == 1 || $show_breadcrumb==""){
-    
+
     /**
     *     echo  '<div class="box-nav breadcrumb"><div class="container"><div class="crumb">';
     *
     */
-    
+
     echo  '<div class="box-nav breadcrumb"><div class=""><div class="crumb">';
     new apweb_breadcrumb;}
     else {
         echo '</div><div class="input hidden apweb-searchform"><form action="'.esc_url(home_url('/')).'" id="cse-search-box"><input type="text" value="Search" onFocus="if(this.value==\'Search\'){this.value=\'\'}" id="s" onBlur="if(this.value==\'\'){this.value=\'Search\'}" name="s" class="search_r_text"><input type="submit" name="sa" class="search-btn" value=""></form></div> <div class="clear"></div></div></div>';
-    
+
 
     }
 }

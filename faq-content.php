@@ -15,8 +15,8 @@ Template Name: FAQ
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package APWEB-FRAMWORK
- * @since Apweb 1.0.2
+ * @package apweb
+ * @since apweb 1.0.0
  */
 get_header();
 ?>
@@ -26,7 +26,7 @@ get_header();
         <div class="container col-lg-9">
             <section>
                 <div class="page-header" id="features">
-                    <h2>FAQ.<small> PERGUNTAS FREQUENTES </small></h2>
+                    <h2>FAQ.<small> <?php __('Common questions', 'apweb');?> </small></h2>
                 </div><!-- End page header -->
                 <div class="panel-group" id="accordion">
                     <div class="panel panel-default">

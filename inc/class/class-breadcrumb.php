@@ -5,9 +5,9 @@ if(!class_exists('apweb_breadcrumb'))
 
 	class apweb_breadcrumb
 	{
-		var $options;
+		private $options;
 		
-	function apweb_breadcrumb($options = ""){
+	function __construct($options = ""){
 		
 		$this->options = array( 	//change this array if you want another output scheme
 		'before' => '<span class="arrow"> ',
@@ -24,7 +24,7 @@ if(!class_exists('apweb_breadcrumb'))
 		$markup = $this->options['before'].$this->options['delimiter'].$this->options['after'];
 		
 		global $post;
-		echo '<p class="breadcrumb"><a href="'.get_bloginfo('url').'">';
+		echo '<p class="breadcrumb"><a href="'.esc_url( home_url( '/' ) ).'">';
 			_e("Home",'apweb');
 			echo "</a>";
 			if(!is_front_page()){echo $markup;}
@@ -100,11 +100,11 @@ if(!class_exists('apweb_breadcrumb'))
 		return;
 		}
 		
-		if(is_tax()){
-			  $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
-			  return $term->name;
-	
-		}
+//		if(is_tax()){
+//			  $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
+//			  return $term->name;
+//
+//		}
 		
 		
 		if(is_category()){
@@ -126,9 +126,9 @@ if(!class_exists('apweb_breadcrumb'))
 		}
 		if(is_tag()){ return "Tag: ".single_tag_title('',FALSE); }
 		
-		if(is_404()){ return _e("404 - Page not Found",'apweb_framework'); }
+		if(is_404()){ return _e("404 - Page not Found",'apweb'); }
 		
-		if(is_search()){ return _e("Search",'apweb_framework');}	
+		if(is_search()){ return _e("Search",'apweb');}
 		
 		if(is_year()){ return get_the_time('Y'); }
 		
@@ -176,7 +176,7 @@ if(!class_exists('apweb_breadcrumb'))
  
  
 function apweb_breadcrumbs( $args = array() ) {
-	global $wp_query, $wp_rewrite;
+	global $wp_query, $wp_rewrite, $show_posts_page, $echo, $show_home, $front_page;
 
 
 	/* Create an empty variable for the breadcrumb. */
@@ -210,7 +210,7 @@ function apweb_breadcrumbs( $args = array() ) {
 
 	/* If $show_home is set and we're not on the front page of the site, link to the home page. */
 	if ( !is_front_page() && $show_home )
-		$trail[] = '<a href="' . esc_url(home_url('/')). '" title="' . esc_attr( get_bloginfo( 'name' ) ) . '" rel="home" class="trail-begin">' . $show_home . '</a>';
+		$trail[] = '<a href="' . esc_url(home_url('/')). '" title="' .  esc_url( home_url(( 'name' ) )) . '" rel="home" class="trail-begin">' . $show_home . '</a>';
 
 	/* If viewing the front page of the site. */
 	if ( is_front_page() ) {
@@ -247,8 +247,9 @@ function apweb_breadcrumbs( $args = array() ) {
 				$path .= trailingslashit( $wp_rewrite->front );
 
 			/* If there's a slug, add it to the $path. */
-			if ( !empty( $post_type_object->rewrite['slug'] ) )
-				$path .= $post_type_object->rewrite['slug'];
+			if ( !empty( $post_type_object->rewrite['post'] ) )
+				$path .= $post_type_object->rewrite['post'];
+
 
 			/* If there's a path, check for parents. */
 			if ( !empty( $path ) )
@@ -258,17 +259,18 @@ function apweb_breadcrumbs( $args = array() ) {
 			if ( !empty( $post_type_object->has_archive ) && function_exists( 'get_post_type_archive_link' ) )
 				$trail[] = '<a href="' . get_post_type_archive_link( $post_type ) . '" title="' . esc_attr( $post_type_object->labels->name ) . '">' . $post_type_object->labels->name . '</a>';
 		}
-		
-		/* try to build a generic taxonomy trail no matter the post type and taxonomy and terms
-		$currentTax = "";
-		foreach(get_taxonomies() as $tax)
-		{
-			$terms = get_the_term_list( $post_id, $tax, '', '$$$', '' );
-			echo"<pre>";
-			print_r($tax.$terms);
-			echo"</pre>";
-		}
-		*/
+
+
+        // try to build a generic taxonomy trail no matter the post type and taxonomy and terms
+        $currentTax = "";
+        foreach(get_taxonomies() as $tax)
+        {
+            $terms = get_the_term_list( $post_id, $tax, '', '$$$', '' );
+            echo"<pre>";
+            print_r($tax.$terms);
+            echo"</pre>";
+        }
+
 		
 		if('post' == $post_type)
 		{
@@ -334,7 +336,7 @@ function apweb_breadcrumbs( $args = array() ) {
 			else {
 				if ( $taxonomy->rewrite['with_front'] && $wp_rewrite->front )
 					$path = trailingslashit( $wp_rewrite->front );
-				$path .= $taxonomy->rewrite['slug'];
+				$path .= $taxonomy->rewrite['category'];
 			}
 
 			/* Get parent pages by path if they exist. */

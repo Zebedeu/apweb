@@ -5,7 +5,7 @@
  *
  * @link https://jetpack.me/
  *
- * @package APWEB-FRAMWORK
+ * @package apweb
  *
  */
 
