@@ -4,13 +4,14 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package apweb
- * @since apweb 1.0.0
+ * @package k7themes
+ * @since k7themes' 1.0.0
  */
 get_header();
 ?>
 
 <div id="primary" class="content-area">
+    <h5 class="archive-title"><?php new Apweb_breadcrumb(); ?></h5>
     <main id="main" class="site-main" role="main">
 
         <?php if (have_posts()) : ?>

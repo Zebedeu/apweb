@@ -4,8 +4,8 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package apweb
- * @since apweb 1.0.0
+ * @package k7themes
+ * @since k7themes' 1.0.0
  */
 ?>
 
@@ -18,7 +18,7 @@
 
 
     <footer class="entry-footer">
-        <?php edit_post_link(esc_html__('Edit', 'apweb'), '<span class="edit-link">', '</span>'); ?>
+        <?php edit_post_link(esc_html__('Edit', 'k7themes'), '<span class="edit-link">', '</span>'); ?>
     </footer><!-- .entry-footer -->
 </article><!-- #post-## -->
 

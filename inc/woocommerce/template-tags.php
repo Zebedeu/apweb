@@ -2,7 +2,7 @@
 /**
  * Custom template tags used to integrate this theme with WooCommerce.
  *
- * @package apweb
+ * @package k7themes
  */
 
 if ( ! function_exists( 'apweb_cart_link' ) ) {
@@ -15,7 +15,7 @@ if ( ! function_exists( 'apweb_cart_link' ) ) {
 	 *
 	 * @param  array $settings Settings
 	 *
-	 * @return array           Settings
+	 * @return array Settings
 	 */
 	function apweb_cart_link() {
 		if ( is_cart() ) {
@@ -25,8 +25,8 @@ if ( ! function_exists( 'apweb_cart_link' ) ) {
 		}
 		?>
 		<li class="<?php echo esc_attr( $class ); ?>">
-			<a class="cart-contents" href="<?php echo esc_url( WC()->cart->get_cart_url() ); ?>" title="<?php _e( 'View your shopping cart', 'apweb' ); ?>">
-				<?php echo wp_kses_data( WC()->cart->get_cart_total() ); ?> <span class="count"><?php echo wp_kses_data( sprintf( _n( '%d item', '%d items', WC()->cart->get_cart_contents_count(), 'apweb' ), WC()->cart->get_cart_contents_count() ) );?></span>
+			<a class="cart-contents" href="<?php echo esc_url( WC()->cart->get_cart_url() ); ?>" title="<?php _e( 'View your shopping cart', 'k7themes' ); ?>">
+				<?php echo wp_kses_data( WC()->cart->get_cart_total() ); ?> <span class="count"><?php echo wp_kses_data( sprintf( _n( '%d item', '%d items', WC()->cart->get_cart_contents_count(), 'k7themes' ), WC()->cart->get_cart_contents_count() ) );?></span>
 			</a>
 		</li>
 		<?php

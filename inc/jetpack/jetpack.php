@@ -5,7 +5,7 @@
  *
  * @link https://jetpack.me/
  *
- * @package apweb
+ * @package k7themes
  *
  */
 

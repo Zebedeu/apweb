@@ -5,8 +5,8 @@
  * This page is implemented using the Settings API
  * http://codex.wordpress.org/Settings_API
  * 
- * @package apweb
- * @since apweb 1.0.0
+ * @package k7themes
+ * @since k7themes' 1.0.0
  */
 if (!function_exists('apweb_setup')) :
     /**
@@ -20,7 +20,7 @@ if (!function_exists('apweb_setup')) :
     
     function apweb_setup() {
 
-        /*         * *** loard apweb theme Options */
+        /*         * *** loard k7themes' theme Options */
 
 
 
@@ -73,13 +73,6 @@ if (!function_exists('apweb_setup')) :
 
 
 
-        /*
-         * Make theme available for translation.
-         * Translations can be filed in the /languages/ directory.
-         * If you're building a theme based on apweb, use a find and replace
-         * to change 'apweb' to the name of your theme in all the template files.
-         */
-        load_theme_textdomain('apweb', get_template_directory() . '/languages');
 
         // Add default posts and comments RSS feed links to head.
         add_theme_support('automatic-feed-links');
@@ -110,9 +103,9 @@ if (!function_exists('apweb_setup')) :
         // This theme uses wp_nav_menu() in one location.
         // This theme uses wp_nav_menu() in one location.
         register_nav_menus(array(
-            'primary' => esc_html__('Primary Menu', 'apweb'),
-            'secondy' => esc_html__('Secondy Menu', 'apweb'),
-            'Footer' => esc_html__('Footer Menu', 'apweb'),
+            'primary' => esc_html__('Primary Menu', 'k7themes'),
+            'secondy' => esc_html__('Secondy Menu', 'k7themes'),
+            'Footer' => esc_html__('Footer Menu', 'k7themes'),
         ));
 
         /*
@@ -171,7 +164,7 @@ add_action('after_setup_theme', 'apweb_content_width', 0);
  */
 function apweb_widgets_init() {
     register_sidebar(array(
-        'name' => esc_html__('Sidebar', 'apweb'),
+        'name' => esc_html__('Sidebar', 'k7themes'),
         'id' => 'sidebar-1',
         'description' => '',
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -180,7 +173,7 @@ function apweb_widgets_init() {
         'after_title' => '</h2>',
     ));
     register_sidebar(array(
-        'name' => esc_html__('Sidebar 2', 'apweb'),
+        'name' => esc_html__('Sidebar 2', 'k7themes'),
         'id' => 'sidebar-2',
         'description' => '',
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -189,7 +182,7 @@ function apweb_widgets_init() {
         'after_title' => '</h2>',
     ));
     register_sidebar(array(
-        'name' => esc_html__('Sidebar 3', 'apweb'),
+        'name' => esc_html__('Sidebar 3', 'k7themes'),
         'id' => 'sidebar-3',
         'description' => '',
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -198,7 +191,7 @@ function apweb_widgets_init() {
         'after_title' => '</h2>',
     ));
     register_sidebar(array(
-        'name' => esc_html__('Sidebar 4', 'apweb'),
+        'name' => esc_html__('Sidebar 4', 'k7themes'),
         'id' => 'sidebar-4',
         'description' => '',
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -225,7 +218,7 @@ function get_category_id($cat_name){
 }
 
 /**
- * apweb custom stylesheet URI.
+ * k7themes' custom stylesheet URI.
  *
  * @since  1.0.2
  *
@@ -240,10 +233,10 @@ function get_category_id($cat_name){
  */
 
 function apweb_scripts() {
-    wp_enqueue_style('apweb-style', get_stylesheet_uri());
-    wp_enqueue_style('apweb', get_template_directory_uri() . '/assets/css/style.css');
-    wp_enqueue_style( 'apweb-woo', get_template_directory_uri() . '/assets/css/woo.css');
-    wp_enqueue_style('apweb-efect', get_template_directory_uri() . '/assets/css/efect.css');
+    wp_enqueue_style('k7themes-style', get_stylesheet_uri());
+    wp_enqueue_style('k7themes', get_template_directory_uri() . '/assets/css/style.css');
+    wp_enqueue_style( 'k7themes-woo', get_template_directory_uri() . '/assets/css/woo.css');
+    wp_enqueue_style('k7themes-efect', get_template_directory_uri() . '/assets/css/efect.css');
 
      // wp_enqueue_style('apwebB', get_template_directory_uri() . '/assets/bootstrap/css/bootstrap-themes.css');
      wp_enqueue_style('apwebC', get_template_directory_uri() . '/assets/bootstrap/css/bootstrap-themes.min.css');
@@ -251,11 +244,11 @@ function apweb_scripts() {
        // wp_enqueue_style('apwebE', get_template_directory_uri() . '/assets/bootstrap/css/bootstrap.css');
 
 
-   wp_enqueue_script('apweb-navigations', get_template_directory_uri() . '/assets/bootstrap/jQuery.js');
-   wp_enqueue_script('apweb-jsA', get_template_directory_uri() . '/assets/bootstrap/js/bootstrap.js');
-   wp_enqueue_script('apweb-jsB', get_template_directory_uri() . '/assets/bootstrap/js/bootstrap.min.js');
-    wp_enqueue_script('apweb-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true);
-    wp_enqueue_script('apweb-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true);
+   wp_enqueue_script('k7themes-navigations', get_template_directory_uri() . '/assets/bootstrap/jQuery.js');
+   wp_enqueue_script('k7themes-jsA', get_template_directory_uri() . '/assets/bootstrap/js/bootstrap.js');
+   wp_enqueue_script('k7themes-jsB', get_template_directory_uri() . '/assets/bootstrap/js/bootstrap.min.js');
+    wp_enqueue_script('k7themes-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true);
+    wp_enqueue_script('k7themes-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true);
     if (is_singular() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
     }

@@ -5,8 +5,8 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package apweb
- * @since apweb 1.0.0
+ * @package k7themes
+ * @since k7themes' 1.0.0
  */
 
 /**

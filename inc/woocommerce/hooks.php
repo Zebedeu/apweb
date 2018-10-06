@@ -1,8 +1,8 @@
 <?php
 /**
- * apweb WooCommerce hooks
+ * k7themes' WooCommerce hooks
  *
- * @package apweb
+ * @package k7themes
  */
 
 /**

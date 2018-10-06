@@ -4,29 +4,29 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package apweb
- * @since apweb 1.0.0
+ * @package k7themes
+ * @since k7themes' 1.0.0
  */
 ?>
 
 <section class="no-results not-found">
     <header class="page-header">
-        <h1 class="page-title"><?php esc_html_e('Nothing Found', 'apweb'); ?></h1>
+        <h1 class="page-title"><?php esc_html_e('Nothing Found', 'k7themes'); ?></h1>
     </header><!-- .page-header -->
 
     <div class="page-content">
         <?php if (is_home() && current_user_can('publish_posts')) : ?>
 
-            <p><?php printf(wp_kses(__('Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'apweb'), array('a' => array('href' => array()))), esc_url(admin_url('post-new.php'))); ?></p>
+            <p><?php printf(wp_kses(__('Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'k7themes'), array('a' => array('href' => array()))), esc_url(admin_url('post-new.php'))); ?></p>
 
         <?php elseif (is_search()) : ?>
 
-            <p><?php esc_html_e('Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'apweb'); ?></p>
+            <p><?php esc_html_e('Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'k7themes'); ?></p>
             <?php get_search_form(); ?>
 
         <?php else : ?>
 
-            <p><?php esc_html_e('It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'apweb'); ?></p>
+            <p><?php esc_html_e('It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'k7themes'); ?></p>
             <?php get_search_form(); ?>
 
         <?php endif; ?>

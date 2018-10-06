@@ -6,8 +6,8 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package apweb
- * @since apweb 1.0.0
+ * @package k7themes
+ * @since k7themes' 1.0.0
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -20,17 +20,17 @@
 
         <?php wp_head(); ?>
     </head>
-
-    <body <?php body_class(); ?>>
+   <?php $body_class=""; $body_class .=' woocommerce'; ?>
+    <body <?php body_class($body_class); ?>>
 
         <div id="base">
             <div id="page" class="hfeed site">
-                <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'apweb'); ?></a>
+                <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'k7themes'); ?></a>
                      <form role="search" method="get" class="sform-inline" action="<?php echo esc_url(home_url('/')); ?>">
                         <label>
-                            <input type="search" class="search-field" placeholder="<?php echo esc_attr_x('Search &hellip;', 'placeholder', 'apweb'); ?>" value="<?php echo esc_attr(get_search_query()); ?>" name="s" title="<?php _ex('Search for:', 'label', 'apweb'); ?>">
+                            <input type="search" class="search-field" placeholder="<?php echo esc_attr_x('Search &hellip;', 'placeholder', 'k7themes'); ?>" value="<?php echo esc_attr(get_search_query()); ?>" name="s" title="<?php _ex('Search for:', 'label', 'k7themes'); ?>">
                         </label>
-                        <input type="submit" class="search-submit" value="<?php echo esc_attr_x('Search', 'submit button', 'apweb'); ?>">
+                        <input type="submit" class="search-submit" value="<?php echo esc_attr_x('Search', 'submit button', 'k7themes'); ?>">
                     </form>
 
                 <header id="masthead" class="site-header" role="banner">
@@ -39,10 +39,10 @@
                     <?php
                         /**
                      if (get_theme_mod('contact_add')) { ?>
-                        <div class="add-icon"></div><!-- add-icon --><div class="add-content"><?php echo get_theme_mod('contact_add', __('Dummy Donec Rutrum, 1234 N Duis lacinia vel.', 'apweb')); ?></div><!-- add-content --><div class="clear"></div>
+                        <div class="add-icon"></div><!-- add-icon --><div class="add-content"><?php echo get_theme_mod('contact_add', __('Dummy Donec Rutrum, 1234 N Duis lacinia vel.', 'k7themes')); ?></div><!-- add-content --><div class="clear"></div>
                     <?php } ?>
                     <?php if (get_theme_mod('contact_no')) { ?>
-                        <div class="phone-icon"></div><!-- phone-icon --><div class="phone-content"><?php echo get_theme_mod('contact_no', __('+123 456 7890', 'apweb')); ?></div><!-- phone-content --><div class="clear"></div>
+                        <div class="phone-icon"></div><!-- phone-icon --><div class="phone-content"><?php echo get_theme_mod('contact_no', __('+123 456 7890', 'k7themes')); ?></div><!-- phone-content --><div class="clear"></div>
                     <?php } ?>
                     <?php if (get_theme_mod('contact_mail')) { ?>
                         <div class="mail-icon"></div><!-- mail-icon --><div class="mail-content"><a href="mailto:<?php echo get_theme_mod('contact_mail', 'contact@company.com'); ?>"><?php echo get_theme_mod('contact_mail', 'contact@company.com'); ?></a></div><!-- mail-content --><div class="clear"></div>

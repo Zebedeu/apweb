@@ -1,8 +1,8 @@
 <?php
 /**
- * SKT apweb Theme Customizer
+ * SKT k7themes' Theme Customizer
  *
- * @package SKT apweb
+ * @package SKT k7themes'
 /**
  * Add postMessage support for site title and description for the Theme Customizer.
  *
@@ -68,9 +68,9 @@ function apweb_customize_register( $wp_customize )
 	$wp_customize->add_section(
         'logo_sec',
         array(
-            'title' => __('Logo (PRO Version)', 'apweb'),
+            'title' => __('Logo (PRO Version)', 'k7themes'),
             'priority' => 1,
-            'description' => sprintf( __( 'Logo Settings available in %s.', 'apweb' ), sprintf( '<a href="%1$s" target="_blank">%2$s</a>', esc_url( '"'.SKT_PRO_THEME_URL.'"' ), __( 'PRO Version', 'apweb' ))),
+            'description' => sprintf( __( 'Logo Settings available in %s.', 'k7themes' ), sprintf( '<a href="%1$s" target="_blank">%2$s</a>', esc_url( '"'.SKT_PRO_THEME_URL.'"' ), __( 'PRO Version', 'k7themes' ))),
         )
     );  
     $wp_customize->add_setting('apweb_options[logo-info]', array(
@@ -95,8 +95,8 @@ function apweb_customize_register( $wp_customize )
 	
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control($wp_customize,'color_scheme',array(
-			'label' => __('Color Scheme','apweb'),
-			 'description' => sprintf( __( 'More color options in %s.', 'apweb' ), sprintf( '<a href="%1$s" target="_blank">%2$s</a>', esc_url( '"'.SKT_PRO_THEME_URL.'"' ), __( 'PRO Version', 'apweb' ))),
+			'label' => __('Color Scheme','k7themes'),
+			 'description' => sprintf( __( 'More color options in %s.', 'k7themes' ), sprintf( '<a href="%1$s" target="_blank">%2$s</a>', esc_url( '"'.SKT_PRO_THEME_URL.'"' ), __( 'PRO Version', 'k7themes' ))),
 			'section' => 'colors',
 			'settings' => 'color_scheme'
 		))
@@ -109,7 +109,7 @@ function apweb_customize_register( $wp_customize )
 	
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control($wp_customize,'color_scheme_content',array(
-			'label' => __('color for text content','apweb'),
+			'label' => __('color for text content','k7themes'),
 			'section' => 'colors',
 			'settings' => 'color_scheme_content'
 		))
@@ -121,7 +121,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control($wp_customize,'color_scheme_casulo',array(
-			'label' => __('Background for Casulo','apweb'),
+			'label' => __('Background for Casulo','k7themes'),
 			'section' => 'colors',
 			'settings' => 'color_scheme_casulo'
 		))
@@ -134,7 +134,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control($wp_customize,'color_primary',array(
-			'label' => __('Background for Primary','apweb'),
+			'label' => __('Background for Primary','k7themes'),
 			'section' => 'colors',
 			'settings' => 'color_primary'
 		))
@@ -148,7 +148,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control($wp_customize,'color_scheme_header',array(
-			'label' => __('Background for Header','apweb'),
+			'label' => __('Background for Header','k7themes'),
 			'section' => 'colors',
 			'settings' => 'color_scheme_header'
 		))
@@ -161,7 +161,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control($wp_customize,'color_scheme_footer_widght',array(
-			'label' => __('Background for Footer ','apweb'),
+			'label' => __('Background for Footer ','k7themes'),
 			'section' => 'colors',
 			'settings' => 'color_scheme_footer_widght'
 		))
@@ -174,7 +174,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control($wp_customize,'color_scheme_footer_copy',array(
-			'label' => __('Background for Copyright','apweb'),
+			'label' => __('Background for Copyright','k7themes'),
 			'section' => 'colors',
 			'settings' => 'color_scheme_footer_copy'
 		))
@@ -188,9 +188,9 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	 */
 	
 	$wp_customize->add_section('footer_text',array(
-			'title'	=> __('Footer Text','apweb'),
+			'title'	=> __('Footer Text','k7themes'),
 			'priority'	=> null,
-			'description'	=> __('Add footer copyright text','apweb')
+			'description'	=> __('Add footer copyright text','k7themes')
 	));
 	
 	$wp_customize->add_setting('apweb_options[credit-info]', array(
@@ -201,13 +201,13 @@ $wp_customize->add_setting('color_scheme_casulo',array(
     );
     $wp_customize->add_control( new apweb_Info( $wp_customize, 'cred_section', array(
         'section' => 'footer_text',
-		'label'	=> __('To remove credit &amp; copyright text upgrade to PRO version','apweb'),
+		'label'	=> __('To remove credit &amp; copyright text upgrade to PRO version','k7themes'),
         'settings' => 'apweb_options[credit-info]',
         ) )
     );
 	
 	$wp_customize->add_setting('footer_right',array(
-			'default'	=> __('<a href="#">Home</a> | <a href="#">Contact Us</a> | <a href="#">Sitemap</a>','apweb'),
+			'default'	=> __('<a href="#">Home</a> | <a href="#">Contact Us</a> | <a href="#">Sitemap</a>','k7themes'),
 			'sanitize_callback'	=> 'format_for_editor'
 	));
 	
@@ -216,7 +216,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 			$wp_customize,
 			'footer_right',
 			array(
-				'label'	=> __('Footer right text','apweb'),
+				'label'	=> __('Footer right text','k7themes'),
 				'section'	=> 'footer_text',
 				'setting'	=> 'footer_right'
 			)
@@ -230,8 +230,8 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	 */
 
 	$wp_customize->add_section('slider_section',array(
-		'title'	=> __('Slider Settings','apweb'),
-		 'description' => sprintf( __( 'Featured Image Size Should be ( 1400x446 ) More slider settings available in %s.', 'apweb' ), sprintf( '<a href="%1$s" target="_blank">%2$s</a>', esc_url( '"'.SKT_PRO_THEME_URL.'"' ), __( 'PRO Version', 'apweb' ))),
+		'title'	=> __('Slider Settings','k7themes'),
+		 'description' => sprintf( __( 'Featured Image Size Should be ( 1400x446 ) More slider settings available in %s.', 'k7themes' ), sprintf( '<a href="%1$s" target="_blank">%2$s</a>', esc_url( '"'.SKT_PRO_THEME_URL.'"' ), __( 'PRO Version', 'k7themes' ))),
 		'priority'		=> null
 	));
 	
@@ -246,7 +246,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
         $wp_customize,
         'slide_image1',
         array(
-            'label' => __('Slide Image 1 (1400x446)','apweb'),
+            'label' => __('Slide Image 1 (1400x446)','k7themes'),
             'section' => 'slider_section',
             'settings' => 'slide_image1'
         )
@@ -254,18 +254,18 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 );
 
 	$wp_customize->add_setting('slide_title1',array(
-			'default'	=> __('The Next Level in WordPress Theme','apweb'),
+			'default'	=> __('The Next Level in WordPress Theme','k7themes'),
 			'sanitize_callback'	=> 'sanitize_text_field'
 	));
 	
 	$wp_customize->add_control('slide_title1',array(
-		'label'	=> __('Slider title 1','apweb'),
+		'label'	=> __('Slider title 1','k7themes'),
 		'setting'	=> 'slide_title1',
 		'section'	=> 'slider_section'
 	));
 	
 	$wp_customize->add_setting('slide_desc1',array(
-		'default'	=> __('Take your Website to the next level.','apweb'),
+		'default'	=> __('Take your Website to the next level.','k7themes'),
 		'sanitize_callback'	=> 'format_for_editor'	
 	));
 	
@@ -274,7 +274,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 			$wp_customize,
 			'slide_desc1',
 			array(
-				'label'	=> __('Slider description  1','apweb'),
+				'label'	=> __('Slider description  1','k7themes'),
 				'setting'	=> 'slide_desc1',
 				'section'	=> 'slider_section'
 			)
@@ -287,7 +287,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	));
 	
 	$wp_customize->add_control('slide_link1',array(
-			'label'	=> __('Slide link 1','apweb'),
+			'label'	=> __('Slide link 1','k7themes'),
 			'setting'	=> 'slide_link1',
 			'section'	=> 'slider_section'
 	));
@@ -302,7 +302,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 			$wp_customize,
 			'slide_image2',
 			array(
-				'label'	=> __('Slide image 2','apweb'),
+				'label'	=> __('Slide image 2','k7themes'),
 				'setting'	=> 'slide_image2',
 				'section'	=> 'slider_section'
 			)
@@ -310,18 +310,18 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	);
 	
 	$wp_customize->add_setting('slide_title2',array(
-			'default'	=> __('apweb WordPress Theme','apweb'),
+			'default'	=> __('k7themes WordPress Theme','k7themes'),
 			'sanitize_callback'		=> 'sanitize_text_field'
 	));
 	
 	$wp_customize->add_control('slide_title2',array(
-			'label'	=> __('Slide title 2','apweb'),
+			'label'	=> __('Slide title 2','k7themes'),
 			'setting'	=> 'slide_title2',
 			'section'	=> 'slider_section'
 	));
 	
 	$wp_customize->add_setting('slide_desc2',array(
-			'default'	=> __('Responsive & Retina Ready with Clean and Modern Design','apweb'),
+			'default'	=> __('Responsive & Retina Ready with Clean and Modern Design','k7themes'),
 			'sanitize_callback'	=> 'format_for_editor'
 	));
 	
@@ -330,7 +330,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 			$wp_customize,
 			'slide_desc2',
 			array(
-				'label'	=> __('Slide description 2','apweb'),
+				'label'	=> __('Slide description 2','k7themes'),
 				'setting'	=> 'slide_desc2',
 				'section'	=> 'slider_section'
 			)
@@ -343,7 +343,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	));
 	
 	$wp_customize->add_control('slide_link2',array(
-		'label'	=> __('Slide link 2','apweb'),
+		'label'	=> __('Slide link 2','k7themes'),
 		'setting'	=> 'slide_link2',
 		'section'	=> 'slider_section'
 	));
@@ -358,7 +358,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 			$wp_customize,
 			'slide_image3',
 			array(
-				'label'	=> __('Slide Image 3','apweb'),
+				'label'	=> __('Slide Image 3','k7themes'),
 				'setting'	=> 'slide_image3',
 				'section'	=> 'slider_section'
 			)
@@ -366,18 +366,18 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	);
 	
 	$wp_customize->add_setting('slide_title3',array(
-			'default'	=> __('Incredible Ease of Customization','apweb'),
+			'default'	=> __('Incredible Ease of Customization','k7themes'),
 			'sanitize_callback'	=> 'sanitize_text_field'
 	));
 	
 	$wp_customize->add_control('slide_title3',array(
-			'label'	=> __('Slide title 3','apweb'),
+			'label'	=> __('Slide title 3','k7themes'),
 			'setting'	=> 'slide_image3',
 			'section'	=> 'slider_section'
 	));
 	
 	$wp_customize->add_setting('slide_desc3',array(
-			'default'	=> __('Re-Usable features with amazing user experience','apweb'),
+			'default'	=> __('Re-Usable features with amazing user experience','k7themes'),
 			'sanitize_callback'	=> 'format_for_editor'
 	));
 	
@@ -386,7 +386,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 			$wp_customize,
 			'slide_desc3',
 			array(
-				'label'	=> __('Slide Description 3','apweb'),
+				'label'	=> __('Slide Description 3','k7themes'),
 				'setting'	=> 'slide_desc3',
 				'section'	=> 'slider_section'
 			)
@@ -399,7 +399,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	));
 	
 	$wp_customize->add_control('slide_link3',array(
-			'label'	=> __('Slide link 3','apweb'),
+			'label'	=> __('Slide link 3','k7themes'),
 			'setting'	=> 'slide_link3',
 			'section'	=> 'slider_section'
 	));
@@ -414,7 +414,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 			$wp_customize,
 			'slide_image4',
 			array(
-				'label'	=> __('Slide Image 4','apweb'),
+				'label'	=> __('Slide Image 4','k7themes'),
 				'setting'	=> 'slide_image4',
 				'section'	=> 'slider_section'
 			)
@@ -427,7 +427,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	));
 	
 	$wp_customize->add_control('slide_title4',array(
-			'label'	=> __('Slide title 4','apweb'),
+			'label'	=> __('Slide title 4','k7themes'),
 			'setting'	=> 'slide_title4',
 			'section'	=> 'slider_section'
 	));
@@ -442,7 +442,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 			$wp_customize,
 			'slide_desc5',
 			array(
-				'label'	=> __('Slide description 4','apweb'),
+				'label'	=> __('Slide description 4','k7themes'),
 				'setting'	=> 'slide_desc4',
 				'section'	=> 'slider_section'
 			)
@@ -455,7 +455,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	));	
 	
 	$wp_customize->add_control('slide_link5',array(
-			'label'	=> __('Slide link 4','apweb'),
+			'label'	=> __('Slide link 4','k7themes'),
 			'setting'	=> 'slide_link4',
 			'section'	=> 'slider_section'
 	));
@@ -472,7 +472,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 			$wp_customize,
 			'slide_image5',
 			array(
-				'label'	=> __('Slide Image 5','apweb'),
+				'label'	=> __('Slide Image 5','k7themes'),
 				'setting'	=> 'slide_image5',
 				'section'	=> 'slider_section'
 			)
@@ -485,7 +485,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	));
 	
 	$wp_customize->add_control('slide_title5',array(
-			'label'	=> __('Slide title 5','apweb'),
+			'label'	=> __('Slide title 5','k7themes'),
 			'setting'	=> 'slide_title5',
 			'section'	=> 'slider_section'
 	));
@@ -500,7 +500,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 			$wp_customize,
 			'slide_desc5',
 			array(
-				'label'	=> __('Slide description 5','apweb'),
+				'label'	=> __('Slide description 5','k7themes'),
 				'setting'	=> 'slide_desc5',
 				'section'	=> 'slider_section'
 			)
@@ -513,7 +513,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	));	
 	
 	$wp_customize->add_control('slide_link5',array(
-			'label'	=> __('Slide link 5','apweb'),
+			'label'	=> __('Slide link 5','k7themes'),
 			'setting'	=> 'slide_link5',
 			'section'	=> 'slider_section'
 	));
@@ -525,8 +525,8 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	 */
 
 	$wp_customize->add_section('page_boxes',array(
-		'title'	=> __('Homepage Boxes','apweb'),
- 			'description' => sprintf( __( 'Featured Image Dimensions : ( 58 X 58 )<br/> Select Featured Image for these pages <br /> How to set featured image %s', 'apweb' ), sprintf( '<a href="%1$s" target="_blank">%2$s</a>', esc_url( '"'.SKT_THEME_FEATURED_SET_VIDEO_URL.'"' ), __( 'Click Here ?', 'apweb' )
+		'title'	=> __('Homepage Boxes','k7themes'),
+ 			'description' => sprintf( __( 'Featured Image Dimensions : ( 58 X 58 )<br/> Select Featured Image for these pages <br /> How to set featured image %s', 'k7themes' ), sprintf( '<a href="%1$s" target="_blank">%2$s</a>', esc_url( '"'.SKT_THEME_FEATURED_SET_VIDEO_URL.'"' ), __( 'Click Here ?', 'k7themes' )
 						)
 					),
 		'priority'	=> null
@@ -545,7 +545,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 		'page-setting1',
 		array(
 			'type' => 'dropdown-pages',
-			'label' => __('Choose a page for box one:','apweb'),
+			'label' => __('Choose a page for box one:','k7themes'),
 			'section' => 'page_boxes',
 		)
 	);
@@ -558,7 +558,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	
 	$wp_customize->add_control('page-setting2',array(
 			'type'	=> 'dropdown-pages',
-			'label'	=> __('Choose a page for box two:','apweb'),
+			'label'	=> __('Choose a page for box two:','k7themes'),
 			'section'	=> 'page_boxes'	
 	));
 	
@@ -570,7 +570,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	
 	$wp_customize->add_control('page-setting3',array(
 			'type'	=> 'dropdown-pages',
-			'label'	=> __('Choose a page for box three:','apweb'),
+			'label'	=> __('Choose a page for box three:','k7themes'),
 			'section'	=> 'page_boxes'
 	));
 	
@@ -582,7 +582,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	
 	$wp_customize->add_control('page-setting4',array(
 			'type'	=> 'dropdown-pages',
-			'label'	=> __('Choose a page for box four:','apweb'),
+			'label'	=> __('Choose a page for box four:','k7themes'),
 			'section'	=> 'page_boxes'
 	));
 
@@ -593,8 +593,8 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	 */
 
 	$wp_customize->add_section('social_sec',array(
-			'title'	=> __('Social Settings','apweb'),
-			'description' => sprintf( __( 'More social icon available in %s.', 'apweb' ), sprintf( '<a href="%1$s" target="_blank">%2$s</a>', esc_url( '"'.SKT_PRO_THEME_URL.'"' ), __( 'PRO Version', 'apweb' ))),
+			'title'	=> __('Social Settings','k7themes'),
+			'description' => sprintf( __( 'More social icon available in %s.', 'k7themes' ), sprintf( '<a href="%1$s" target="_blank">%2$s</a>', esc_url( '"'.SKT_PRO_THEME_URL.'"' ), __( 'PRO Version', 'k7themes' ))),
 			'priority'		=> null
 	));
 	
@@ -604,7 +604,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	));
 	
 	$wp_customize->add_control('fb_link',array(
-			'label'	=> __('Add facebook link here','apweb'),
+			'label'	=> __('Add facebook link here','k7themes'),
 			'setting'	=> 'fb_link',
 			'section'	=> 'social_sec'
 	));
@@ -615,7 +615,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	));
 	
 	$wp_customize->add_control('twitt_link',array(
-			'label'	=> __('Add twitter link here','apweb'),
+			'label'	=> __('Add twitter link here','k7themes'),
 			'setting'	=> 'twitt_link',
 			'section'	=> 'social_sec'
 	));
@@ -626,7 +626,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	));
 	
 	$wp_customize->add_control('gplus_link',array(
-			'label'	=> __('Add google plus link here','apweb'),
+			'label'	=> __('Add google plus link here','k7themes'),
 			'setting'	=> 'gplus_link',
 			'section'	=> 'social_sec'
 	));
@@ -637,7 +637,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	));
 	
 	$wp_customize->add_control('linked_link',array(
-			'label'	=> __('Add linkedin link here','apweb'),
+			'label'	=> __('Add linkedin link here','k7themes'),
 			'setting'	=> 'linked_link',
 			'section'	=> 'social_sec'
 	));
@@ -651,24 +651,24 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 
 
 	$wp_customize->add_section('contact_sec',array(
-			'title'	=> __('Contact Details','apweb'),
-			'description'	=> __('Add you contact details here','apweb'),
+			'title'	=> __('Contact Details','k7themes'),
+			'description'	=> __('Add you contact details here','k7themes'),
 			'priority'	=> null
 	));
 	
 	$wp_customize->add_setting('contact_title',array(
-			'default'	=> __('Contact apweb','apweb'),
+			'default'	=> __('Contact k7themes','k7themes'),
 			'sanitize_callback'	=> 'sanitize_text_field'
 	));
 	
 	$wp_customize->add_control('contact_title',array(
-			'label'	=> __('Add contact title here','apweb'),
+			'label'	=> __('Add contact title here','k7themes'),
 			'setting'	=> 'contact_title',
 			'section'	=> 'contact_sec'
 	));
 	
 	$wp_customize->add_setting('contact_desc',array(
-			'default'	=> __('Sed suscipit mauris nec mauris vulputate, a posuere libero congue. Nam laoreet elit eu erat pulvinar, et efficitur nibh euismod.Nam metus lorem, hendrerit quis ante eget, lobortis elementum neque. Aliquam in ullamcorper quam. Integer euismod ligula in mauris vehic.','apweb'),
+			'default'	=> __('Sed suscipit mauris nec mauris vulputate, a posuere libero congue. Nam laoreet elit eu erat pulvinar, et efficitur nibh euismod.Nam metus lorem, hendrerit quis ante eget, lobortis elementum neque. Aliquam in ullamcorper quam. Integer euismod ligula in mauris vehic.','k7themes'),
 			'sanitize_callback'	=> 'format_for_editor'
 	));
 	
@@ -677,7 +677,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 			$wp_customize,
 			'contact_desc',
 			array(
-				'label'	=> __('Add contact description here','apweb'),
+				'label'	=> __('Add contact description here','k7themes'),
 				'setting'	=> 'contact_desc',
 				'section'	=> 'contact_sec'
 			)
@@ -685,7 +685,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	);
 	
 	$wp_customize->add_setting('contact_add',array(
-			'default'	=> __('Rua Diolinda Rodrigues, Bairro Comercial, Huila, Lubango','apweb'),
+			'default'	=> __('Rua Diolinda Rodrigues, Bairro Comercial, Huila, Lubango','k7themes'),
 			'sanitize_callback'	=> 'format_for_editor'
 	));
 	
@@ -694,7 +694,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 			$wp_customize,
 			'contact_add',
 			array(
-				'label'	=> __('Add contact address here','apweb'),
+				'label'	=> __('Add contact address here','k7themes'),
 				'setting'	=> 'contact_add',
 				'section'	=> 'contact_sec'
 			)
@@ -702,12 +702,12 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	);
 	
 	$wp_customize->add_setting('contact_no',array(
-			'default'	=> __('+244 913 750 140','apweb'),
+			'default'	=> __('+244 913 750 140','k7themes'),
 			'sanitize_callback'	=> 'sanitize_text_field'
 	));
 	
 	$wp_customize->add_control('contact_no',array(
-			'label'	=> __('Add contact number here.','apweb'),
+			'label'	=> __('Add contact number here.','k7themes'),
 			'setting'	=> 'contact_no',
 			'section'	=> 'contact_sec'
 	));
@@ -718,7 +718,7 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	));
 	
 	$wp_customize->add_control('contact_mail',array(
-			'label'	=> __('Add you email here','apweb'),
+			'label'	=> __('Add you email here','k7themes'),
 			'setting'	=> 'contact_mail',
 			'section'	=> 'contact_sec'
 	));
@@ -734,9 +734,9 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	$wp_customize->add_section(
         'theme_layout_sec',
         array(
-            'title' => __('Layout Settings (PRO Version)', 'apweb'),
+            'title' => __('Layout Settings (PRO Version)', 'k7themes'),
             'priority' => null,
-            'description' => sprintf( __( 'Layout Settings available in   %s.', 'apweb' ), sprintf( '<a href="%1$s" target="_blank">%2$s</a>', esc_url( '"'.SKT_PRO_THEME_URL.'"' ), __( 'PRO Version', 'apweb' ))),
+            'description' => sprintf( __( 'Layout Settings available in   %s.', 'k7themes' ), sprintf( '<a href="%1$s" target="_blank">%2$s</a>', esc_url( '"'.SKT_PRO_THEME_URL.'"' ), __( 'PRO Version', 'k7themes' ))),
         )
     );  
     $wp_customize->add_setting('apweb_options[layout-info]', array(
@@ -761,9 +761,9 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	$wp_customize->add_section(
         'theme_font_sec',
         array(
-            'title' => __('Fonts Settings (PRO Version)', 'apweb'),
+            'title' => __('Fonts Settings (PRO Version)', 'k7themes'),
             'priority' => null,
-            'description' => sprintf( __( 'Font Settings available in   %s.', 'apweb' ), sprintf( '<a href="%1$s" target="_blank">%2$s</a>', esc_url( '"'.SKT_PRO_THEME_URL.'"' ), __( 'PRO Version', 'apweb' ))),
+            'description' => sprintf( __( 'Font Settings available in   %s.', 'k7themes' ), sprintf( '<a href="%1$s" target="_blank">%2$s</a>', esc_url( '"'.SKT_PRO_THEME_URL.'"' ), __( 'PRO Version', 'k7themes' ))),
         )
     );  
     $wp_customize->add_setting('apweb_options[font-info]', array(
@@ -790,9 +790,9 @@ $wp_customize->add_setting('color_scheme_casulo',array(
 	$wp_customize->add_section(
         'theme_doc_sec',
         array(
-            'title' => __('Documentation &amp; Support', 'apweb'),
+            'title' => __('Documentation &amp; Support', 'k7themes'),
             'priority' => null,
-			 'description' => sprintf( __( 'For documentation and support check this link %s.', 'apweb' ), sprintf( '<a href="%1$s" target="_blank">%2$s</a>', esc_url( '"'.SKT_THEME_DOC.'"' ), __( 'apweb Documentation', 'apweb' ))),
+			 'description' => sprintf( __( 'For documentation and support check this link %s.', 'k7themes' ), sprintf( '<a href="%1$s" target="_blank">%2$s</a>', esc_url( '"'.SKT_THEME_DOC.'"' ), __( 'k7themes Documentation', 'k7themes' ))),
         )
     );  
     $wp_customize->add_setting('apweb_options[info]', array(
@@ -883,6 +883,6 @@ add_action( 'customize_preview_init', 'apweb_customize_preview_js' );
 
 
 function apweb_custom_customize_enqueue() {
-	wp_enqueue_script( 'apweb-custom-customize', get_template_directory_uri() . '/js/custom.customize.js', array( 'jquery', 'customize-controls' ), false, true );
+	wp_enqueue_script( 'k7themes-custom-customize', get_template_directory_uri() . '/js/custom.customize.js', array( 'jquery', 'customize-controls' ), false, true );
 }
 add_action( 'customize_controls_enqueue_scripts', 'apweb_custom_customize_enqueue' );

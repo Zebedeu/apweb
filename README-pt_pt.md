@@ -1,25 +1,25 @@
-# apweb
+# k7themes'
 Framwork Project
 
-# apweb Framework #
+# k7themes' Framework #
 
 
-* [GitHub](https://github.com/ArtPhotografie/apweb)
+* [GitHub](https://github.com/ArtPhotografie/k7themes')
 
 
 ## Descrição do Projeto ##
 
-Bem vindos ao apweb Framework, um tema base desenvolvido pela [ArtFotografie ](https://www.facebook.com/ARTPHOTOGRAFIE1), para auxiliar no desenvolvimento ágil de temas para WordPress.
+Bem vindos ao k7themes' Framework, um tema base desenvolvido pela [ArtFotografie ](https://www.facebook.com/ARTPHOTOGRAFIE1), para auxiliar no desenvolvimento ágil de temas para WordPress.
 
 ## Instalação ##
 
-Envie a pasta "apweb" para a pasta de temas padrão do WordPress `wp-content/themes` ou simplesmente envie o arquivo zipado utilizando o instalador de temas do WordPress.
+Envie a pasta "k7themes'" para a pasta de temas padrão do WordPress `wp-content/themes` ou simplesmente envie o arquivo zipado utilizando o instalador de temas do WordPress.
 
 ## Documentação ##
 
 ## Suporte a plugins ##
 
- apweb Framework suporta nativamente os plugins:
+ k7themes' Framework suporta nativamente os plugins:
 
 * [WooCommerce](http://wordpress.org/extend/plugins/woocommerce/)
 * [JetPack](http://wordpress.org/extend/plugins/jetpack/) Infinite Scroll
@@ -34,9 +34,9 @@ Envie a pasta "apweb" para a pasta de temas padrão do WordPress `wp-content/the
 
 ## Bugs e Sugestões ##
 
-O apweb Framework é um projeto **Open Source**. Qualquer um pode (e deveria) ajudar a melhorá-lo.
+O k7themes' Framework é um projeto **Open Source**. Qualquer um pode (e deveria) ajudar a melhorá-lo.
 
-Reporte bugs ou faça sugestões utilizando o [Issues/Fórum do Projeto](https://github.com/ArtPhotografie/apweb/issues)
+Reporte bugs ou faça sugestões utilizando o [Issues/Fórum do Projeto](https://github.com/ArtPhotografie/k7themes'/issues)
 
 ## Contribua com o Projeto ##
 
@@ -48,7 +48,7 @@ Mais detalhes de como contribuir e enviar Pull Requests em [GitHub Collaborating
 
 ## Changelog ##
 
-[Changelog aqui!](https://github.com/wpbrasil/apweb/blob/master/docs/CHANGELOG.md)
+[Changelog aqui!](https://github.com/wpbrasil/k7themes'/blob/master/docs/CHANGELOG.md)
 
 ## Copyright e Licença ##
 

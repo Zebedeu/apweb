@@ -15,8 +15,8 @@ Template Name: FAQ
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package apweb
- * @since apweb 1.0.0
+ * @package k7themes
+ * @since k7themes' 1.0.0
  */
 get_header();
 ?>
@@ -26,7 +26,7 @@ get_header();
         <div class="container col-lg-9">
             <section>
                 <div class="page-header" id="features">
-                    <h2>FAQ.<small> <?php __('Common questions', 'apweb');?> </small></h2>
+                    <h2>FAQ.<small> <?php __('Common questions', 'k7themes');?> </small></h2>
                 </div><!-- End page header -->
                 <div class="panel-group" id="accordion">
                     <div class="panel panel-default">

@@ -5,8 +5,8 @@
  * This page is implemented using the Settings API
  * http://codex.wordpress.org/Settings_API
  *
- * @package apweb
- * @since apweb 1.0.0
+ * @package k7themes
+ * @since k7themes' 1.0.0
  *
 *
      * Sets up theme defaults and registers support for various WordPress features.
@@ -55,19 +55,19 @@ function apweb_font_url(){
         * not supported by Roboto, translate this to off, do not
         * translate into your own language.
         */
-        $roboto = _x('on', 'Roboto font:on or off','apweb');
+        $roboto = _x('on', 'Roboto font:on or off','k7themes');
         
         /* Translators: If there are any character that are not
         * supported by Oswald, trsnalate this to off, do not
         * translate into your own language.
         */
-        $oswald = _x('on','Oswald:on or off','apweb');
+        $oswald = _x('on','Oswald:on or off','k7themes');
         
         /* Translators: If there has any character that are not supported 
         *  by Scada, translate this to off, do not translate
         *  into your own language.
         */
-        $scada = _x('on','Scada:on or off','apweb');
+        $scada = _x('on','Scada:on or off','k7themes');
         
         if('off' !== $roboto || 'off' !== $oswald){
             $font_family = array();
@@ -97,7 +97,7 @@ if ( ! function_exists( 'apweb_END_register_scripts' ) ) :
      *
      * @uses wp_register_scripts() To register scripts
      *
-     * @since apweb 1.0.1
+     * @since k7themes' 1.0.1
      */
     function apweb_END_register_scripts() {
         // Add HTML5 support to older versions of IE
@@ -105,7 +105,7 @@ if ( ! function_exists( 'apweb_END_register_scripts' ) ) :
         wp_register_script( 'audio-player', get_template_directory_uri() . '/scripts/audio-player.js', array( 'swfobject' ), '2.2' );
         wp_register_script( 'kwicks', get_template_directory_uri() . '/scripts/kwicks.js', array( 'jquery' ), '1.5.1' );
         wp_register_script( 'colorbox', get_template_directory_uri() . '/scripts/colorbox.js', array( 'jquery' ), '1.3.16' );
-        wp_register_script( 'apweb', get_template_directory_uri() . '/scripts/apweb.js', array( 'kwicks' ), '1.0' );
+        wp_register_script( 'k7themes', get_template_directory_uri() . '/scripts/k7themes.js', array( 'kwicks' ), '1.0' );
     }
 endif;
 
@@ -117,7 +117,7 @@ if ( ! function_exists( 'apweb_END_enqueue_scripts' ) ) :
      *
      * @uses wp_enqueue_scripts() To enqueue scripts
      *
-     * @since apweb 1.0
+     * @since k7themes' 1.0
      */
     function apweb_END_enqueue_scripts() {
         // Add HTML5 support to older versions of IE
@@ -134,22 +134,22 @@ if ( ! function_exists( 'apweb_END_enqueue_scripts' ) ) :
             wp_enqueue_script( 'audio-player' );
         if ( is_single() )
             wp_enqueue_script( 'colorbox' );
-        wp_enqueue_script( 'apweb' );
+        wp_enqueue_script( 'k7themes' );
     }
 endif;
 
 add_action( 'wp_enqueue_scripts', 'apweb_END_enqueue_scripts' );
 
 function apweb_scripts_() {
-    wp_enqueue_style('apweb-font', apweb_font_url(), array());
-    wp_enqueue_style( 'apweb-basic-style', get_stylesheet_uri() );
-    wp_enqueue_style( 'apweb-editor-style', get_template_directory_uri()."/editor-style.css" );
-    wp_enqueue_style( 'apweb-nivoslider-style', get_template_directory_uri()."/css/nivo-slider.css" );
-    wp_enqueue_style( 'apweb-main-style', get_template_directory_uri()."/css/main.css" );
-    wp_enqueue_style( 'apweb-base-style', get_template_directory_uri()."/css/style_base.css" );
-    wp_enqueue_script( 'apweb-nivo-script', get_template_directory_uri() . '/js/jquery.nivo.slider.js', array('jquery') );
-    wp_enqueue_script( 'apweb-custom_js', get_template_directory_uri() . '/js/custom.js' );
-    wp_enqueue_script( 'apweb-custom_brinc', get_template_directory_uri() . '/js/brincando.js' );
+    wp_enqueue_style('k7themes-font', apweb_font_url(), array());
+    wp_enqueue_style( 'k7themes-basic-style', get_stylesheet_uri() );
+    wp_enqueue_style( 'k7themes-editor-style', get_template_directory_uri()."/editor-style.css" );
+    wp_enqueue_style( 'k7themes-nivoslider-style', get_template_directory_uri()."/css/nivo-slider.css" );
+    wp_enqueue_style( 'k7themes-main-style', get_template_directory_uri()."/css/main.css" );
+    wp_enqueue_style( 'k7themes-base-style', get_template_directory_uri()."/css/style_base.css" );
+    wp_enqueue_script( 'k7themes-nivo-script', get_template_directory_uri() . '/js/jquery.nivo.slider.js', array('jquery') );
+    wp_enqueue_script( 'k7themes-custom_js', get_template_directory_uri() . '/js/custom.js' );
+    wp_enqueue_script( 'k7themes-custom_brinc', get_template_directory_uri() . '/js/brincando.js' );
 
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );
@@ -168,8 +168,8 @@ function apweb_ie_stylesheet(){
     *  EXCEPT for IE, then you would HAVE to check the $is_IE global since WordPress doesn't have a way to
     *  properly handle non-IE conditional comments.
     */
-    wp_enqueue_style('apweb-ie', get_template_directory_uri().'/css/ie.css', array('apweb-style'));
-    $wp_styles->add_data('apweb-ie','conditional','IE');
+    wp_enqueue_style('k7themes-ie', get_template_directory_uri().'/css/ie.css', array('k7themes-style'));
+    $wp_styles->add_data('k7themes-ie','conditional','IE');
     }
 add_action('wp_enqueue_scripts','apweb_ie_stylesheet');
 
@@ -177,9 +177,9 @@ add_action('wp_enqueue_scripts','apweb_ie_stylesheet');
 
 define('SKT_URL','http://artphotografie.com');
 define('SKT_THEME_URL','http://artphotografie.com/themes');
-define('SKT_THEME_URL_DIRECT','http://artphotografie.com/shop/apweb-corporate-wordpress-theme/');
-define('SKT_THEME_DOC','http://artphotografie.com/documentation/apweb-documentation/');
-define('SKT_PRO_THEME_URL','http://artphotografie.com/shop/apweb-corporate-wordpress-theme/');
+define('SKT_THEME_URL_DIRECT','http://artphotografie.com/shop/k7themes-corporate-wordpress-theme/');
+define('SKT_THEME_DOC','http://artphotografie.com/documentation/k7themes-documentation/');
+define('SKT_PRO_THEME_URL','http://artphotografie.com/shop/k7themes-corporate-wordpress-theme/');
 define('SKT_THEME_FEATURED_SET_VIDEO_URL','https://www.youtube.com/...');
 
 
@@ -190,6 +190,13 @@ define('SKT_THEME_FEATURED_SET_VIDEO_URL','https://www.youtube.com/...');
 
 
 
+/*
+ * Make theme available for translation.
+ * Translations can be filed in the /languages/ directory.
+ * If you're building a theme based on k7themes', use a find and replace
+ * to change 'k7themes' to the name of your theme in all the template files.
+ */
+load_theme_textdomain('k7themes', get_template_directory() . '/languages');
 
 /**
  * Load Jetpack compatibility file.

@@ -9,13 +9,13 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package apweb
- * @since apweb 1.0.0
+ * @package k7themes
+ * @since k7themes' 1.0.0
  */
 get_header();
 ?>
- <h3><i class="breadcrumb"><?php apweb_get_breadcrumb();?></i></h3>
 <div id="primary" class="content-area">
+    <h3 class="breadcrumb"><?php woocommerce_breadcrumb(); ?></h3>
     <main id="main" class="site-main" role="main">
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <header class="entry-header">
@@ -36,3 +36,4 @@ get_header();
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
+

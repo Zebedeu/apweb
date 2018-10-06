@@ -82,7 +82,7 @@ function apweb_get_breadcrumb(){
     echo  '<div class="box-nav breadcrumb"><div class=""><div class="crumb">';
     new apweb_breadcrumb;}
     else {
-        echo '</div><div class="input hidden apweb-searchform"><form action="'.esc_url(home_url('/')).'" id="cse-search-box"><input type="text" value="Search" onFocus="if(this.value==\'Search\'){this.value=\'\'}" id="s" onBlur="if(this.value==\'\'){this.value=\'Search\'}" name="s" class="search_r_text"><input type="submit" name="sa" class="search-btn" value=""></form></div> <div class="clear"></div></div></div>';
+        echo '</div><div class="input hidden k7themes-searchform"><form action="'.esc_url(home_url('/')).'" id="cse-search-box"><input type="text" value="Search" onFocus="if(this.value==\'Search\'){this.value=\'\'}" id="s" onBlur="if(this.value==\'\'){this.value=\'Search\'}" name="s" class="search_r_text"><input type="submit" name="sa" class="search-btn" value=""></form></div> <div class="clear"></div></div></div>';
 
 
     }
@@ -92,7 +92,7 @@ function __posted_on__(){
        if ('post' === get_post_type()) : ?>
                 <div class="entry-meta">
                     <?php apweb_posted_on(); ?>
-                    <span class="comments_count clearfix entry-comments-link"><?php comments_popup_link(__('0', 'apweb'), __('1', 'apweb'), __('%', 'apweb')); ?></span>
+                    <span class="comments_count clearfix entry-comments-link"><?php comments_popup_link(__('0', 'k7themes'), __('1', 'k7themes'), __('%', 'k7themes')); ?></span>
                 </div><!-- .entry-meta -->
             <?php endif; 
 }
@@ -208,7 +208,7 @@ if ( ! function_exists( 'apweb_post_audio' ) ) :
      *
      * @uses get_posts() To retrieve attached audio files
      *
-     * @since apweb 1.0
+     * @since k7themes' 1.0
      */
     function apweb_post_audio() {
         // Get attached audio files

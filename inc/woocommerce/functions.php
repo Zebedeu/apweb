@@ -2,7 +2,7 @@
 /**
  * General functions used to integrate this theme with WooCommerce.
  *
- * @package apweb
+ * @package k7themes
  */
 
 if ( ! function_exists( 'apweb_before_content' ) ) {

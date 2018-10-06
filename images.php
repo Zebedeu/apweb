@@ -4,8 +4,8 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package apweb
- * @since apweb 1.0.0
+ * @package k7themes
+ * @since k7themes' 1.0.0
  */
 get_header();
 ?>
@@ -20,7 +20,7 @@ get_header();
             <div class="entry-meta">
 			    <?php
 				$metadata = wp_get_attachment_metadata();
-				printf( __( 'Published <span class="entry-date"><time class="entry-date" datetime="%1$s">%2$s</time></span> at <a href="%3$s" title="Link to full-size image">%4$s &times; %5$s</a> in <a href="%6$s" title="Return to %7$s" rel="gallery">%8$s</a>', 'apweb' ),
+				printf( __( 'Published <span class="entry-date"><time class="entry-date" datetime="%1$s">%2$s</time></span> at <a href="%3$s" title="Link to full-size image">%4$s &times; %5$s</a> in <a href="%6$s" title="Return to %7$s" rel="gallery">%8$s</a>', 'k7themes' ),
 				    esc_attr( get_the_date( 'c' ) ),
 				    esc_html( get_the_date() ),
 				    esc_url( wp_get_attachment_url() ),
@@ -31,14 +31,14 @@ get_header();
 				    get_the_title( $post->post_parent )
 				);
 
-				edit_post_link( __( 'Edit', 'apweb' ), '<span class="edit-link">', '</span>' );
+				edit_post_link( __( 'Edit', 'k7themes' ), '<span class="edit-link">', '</span>' );
 			    ?>
 			</div><!-- .entry-meta -->
             
             <?php if ('post' === get_post_type()) : ?>
                 <div class="entry-meta">
                     <?php apweb_posted_on(); ?>
-                    <span class="comments_count clearfix entry-comments-link"><?php comments_popup_link(__('0', 'apweb'), __('1', 'apweb'), __('%', 'apweb')); ?></span>
+                    <span class="comments_count clearfix entry-comments-link"><?php comments_popup_link(__('0', 'k7themes'), __('1', 'k7themes'), __('%', 'k7themes')); ?></span>
                 </div><!-- .entry-meta -->
             <?php endif; ?>
         </header><!-- .entry-header -->

@@ -9,8 +9,8 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package apweb
- * @since apweb 1.0.0
+ * @package k7themes
+ * @since k7themes' 1.0.0
  */
 get_header();
 ?>
@@ -24,7 +24,7 @@ get_header();
                         <?php /*  Active link pages before e after */ ?>
                         <?php
                         wp_link_pages(array(
-                            'before' => '<div class="page-links">' . esc_html__('Pages:', 'apweb'),
+                            'before' => '<div class="page-links">' . esc_html__('Pages:', 'k7themes'),
                             'after' => '</div>',
                         ));
                         ?>
